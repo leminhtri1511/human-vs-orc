@@ -18,18 +18,19 @@ namespace HVO.Scripts.Units
         [SerializeField] private Animator _unitAnimator;
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
-        protected bool IsTargeted => _isTargeted;
-        protected bool IsMoving
+        public bool IsTargeted => _isTargeted;
+
+        public bool IsMoving
         {
             get => _isMoving;
             set => _isMoving = value;
         }
-        
+
         protected Animator UnitAnimator => _unitAnimator;
 
         private void Awake()
         {
-            _originalMaterial = _spriteRenderer.material;
+            _spriteRenderer.material = _originalMaterial;
             _isMoving = false;
             // m_HighlightMaterial = Resources.Load<Material>("Materials/Outline");
         }
@@ -42,17 +43,7 @@ namespace HVO.Scripts.Units
             _aiPawn.SetDestination(destination);
         }
 
-        public void Select()
-        {
-            ToggleUnitSelectedState(true);
-        }
-
-        public void DeSelect()
-        {
-            ToggleUnitSelectedState(false);
-        }
-
-        private void ToggleUnitSelectedState(bool isSelected)
+        public void ToggleUnitSelectedState(bool isSelected)
         {
             _spriteRenderer.material = isSelected ? _highlightMaterial : _originalMaterial;
             _isTargeted = isSelected;

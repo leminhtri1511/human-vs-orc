@@ -2169,6 +2169,7 @@ GameObject:
   - component: {fileID: 1417962502}
   - component: {fileID: 1417962504}
   - component: {fileID: 1417962503}
+  - component: {fileID: 1417962505}
   m_Layer: 0
   m_Name: Builder
   m_TagString: Untagged
@@ -2214,7 +2215,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2283,7 +2284,7 @@ MonoBehaviour:
   _aiPawn: {fileID: 1417962504}
   _isTargeted: 0
   _isMoving: 0
-  _highlightMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
+  _highlightMaterial: {fileID: 2100000, guid: 9738d96cd9555284e866f25ff6e80277, type: 2}
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _unitAnimator: {fileID: 1417962502}
   _spriteRenderer: {fileID: 1417962501}
@@ -2300,6 +2301,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movingSpeed: 5
+--- !u!70 &1417962505
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417962499}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.005656481, y: -0.047457337}
+  m_Size: {x: 1.236234, y: 1.3429141}
+  m_Direction: 0
 --- !u!1 &1513797751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,6 +3005,7 @@ GameObject:
   - component: {fileID: 1596501668}
   - component: {fileID: 1596501670}
   - component: {fileID: 1596501669}
+  - component: {fileID: 1596501671}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Untagged
@@ -3012,7 +3051,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3081,7 +3120,7 @@ MonoBehaviour:
   _aiPawn: {fileID: 1596501670}
   _isTargeted: 0
   _isMoving: 0
-  _highlightMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
+  _highlightMaterial: {fileID: 2100000, guid: 9738d96cd9555284e866f25ff6e80277, type: 2}
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _unitAnimator: {fileID: 1596501668}
   _spriteRenderer: {fileID: 1596501667}
@@ -3098,6 +3137,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movingSpeed: 5
+--- !u!70 &1596501671
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596501665}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.052665114, y: 0.0799827}
+  m_Size: {x: 1.4321301, y: 1.8497735}
+  m_Direction: 0
 --- !u!1 &1673825046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,6 +4150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ce33c7355506a47a386fa081744394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActiveUnit: {fileID: 0}
 --- !u!1 &1997511711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6923,7 +7000,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
