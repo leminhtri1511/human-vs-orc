@@ -3,12 +3,6 @@ using UnityEngine;
 
 namespace HVO.Scripts.Units
 {
-    public enum AnimatorParameterType
-    {
-        IsMoving = 0,
-        IsTargeted = 1
-    }
-    
     public abstract class Unit : MonoBehaviour
     {
         [Header("AI")]
@@ -25,7 +19,6 @@ namespace HVO.Scripts.Units
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
         protected bool IsTargeted => _isTargeted;
-
         protected bool IsMoving
         {
             get => _isMoving;

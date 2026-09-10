@@ -4,12 +4,10 @@ namespace HVO.Scripts.AI
 {
     public class AIPawn : MonoBehaviour
     {
-        [Header("Configs")]
-        [SerializeField] private float _movingSpeed = 5f;
-
-        private Vector3 _destination;
+        [Header("Configs")] [SerializeField] private float _movingSpeed = 5f;
 
         public Vector3 Destination => _destination;
+        private Vector3 _destination;
 
         private void Update()
         {
