@@ -7,6 +7,13 @@ namespace HVO.Scripts.Units
         protected Vector2 Velocity;
         protected Vector3 LastPosition;
 
+        private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
+
+        private void OnEnable()
+        {
+            LastPosition = transform.position;
+        }
+
         private void Update()
         {
             CalculateVelocity();
@@ -14,9 +21,11 @@ namespace HVO.Scripts.Units
 
         private void CalculateVelocity()
         {
+            Vector3 positionDelta = transform.position - LastPosition;
+
             Velocity = new Vector2(
-                (transform.position.x - LastPosition.x),
-                (transform.position.y - LastPosition.y)
+                positionDelta.x,
+                positionDelta.y
             ) / Time.deltaTime;
 
             LastPosition = transform.position;
@@ -27,6 +36,7 @@ namespace HVO.Scripts.Units
         private void UnitStateChecking()
         {
             IsMoving = Velocity.magnitude > 0;
+            UnitAnimator.SetBool(IsMovingHash, IsMoving);
         }
     }
 }

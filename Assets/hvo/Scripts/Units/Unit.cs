@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace HVO.Scripts.Units
 {
+    public enum AnimatorParameterType
+    {
+        IsMoving = 0,
+        IsTargeted = 1
+    }
+    
     public abstract class Unit : MonoBehaviour
     {
         [Header("AI")]
@@ -15,7 +21,7 @@ namespace HVO.Scripts.Units
         [Header("UI Configs")]
         [SerializeField] private Material _highlightMaterial;
         [SerializeField] private Material _originalMaterial;
-        [SerializeField] private Animator _animator;
+        [SerializeField] private Animator _unitAnimator;
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
         protected bool IsTargeted => _isTargeted;
@@ -25,10 +31,13 @@ namespace HVO.Scripts.Units
             get => _isMoving;
             set => _isMoving = value;
         }
+        
+        protected Animator UnitAnimator => _unitAnimator;
 
         private void Awake()
         {
             _originalMaterial = _spriteRenderer.material;
+            _isMoving = false;
             // m_HighlightMaterial = Resources.Load<Material>("Materials/Outline");
         }
 

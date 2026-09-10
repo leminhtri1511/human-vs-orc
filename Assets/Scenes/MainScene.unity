@@ -2218,7 +2218,7 @@ MonoBehaviour:
   _isMoving: 0
   _highlightMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
-  _animator: {fileID: 1417962502}
+  _unitAnimator: {fileID: 1417962502}
   _spriteRenderer: {fileID: 1417962501}
 --- !u!114 &1417962504
 MonoBehaviour:
@@ -2984,7 +2984,7 @@ MonoBehaviour:
   _isMoving: 0
   _highlightMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
-  _animator: {fileID: 1596501668}
+  _unitAnimator: {fileID: 1596501668}
   _spriteRenderer: {fileID: 1596501667}
 --- !u!114 &1596501670
 MonoBehaviour:
