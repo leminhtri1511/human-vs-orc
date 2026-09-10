@@ -1,30 +1,33 @@
-
 using UnityEngine;
 
-public abstract class SingletonManager<T> : MonoBehaviour where T: MonoBehaviour
+namespace HVO.Scripts.Managers
 {
-    protected virtual void Awake()
+    public abstract class SingletonManager<T> : MonoBehaviour where T : MonoBehaviour
     {
-        T[] managers = FindObjectsByType<T>(FindObjectsSortMode.None);
-
-        if (managers.Length > 1)
+        protected virtual void Awake()
         {
+            var managers = FindObjectsByType<T>(FindObjectsSortMode.None);
+
+            if (managers.Length <= 1) return;
             Destroy(gameObject);
-            return;
-        }
-    }
-                                                                    
-    public static T Get()
-    {
-        var tag = typeof(T).Name;
-        GameObject managerObject = GameObject.FindWithTag(tag);
-        if (managerObject != null)
-        {
-            return managerObject.GetComponent<T>();
         }
 
-        GameObject go = new(tag);
-        go.tag = tag;
-        return go.AddComponent<T>();
+        public static T Get()
+        {
+            var tag = typeof(T).Name;
+            var managerObject = GameObject.FindWithTag(tag);
+
+            if (managerObject != null)
+            {
+                return managerObject.GetComponent<T>();
+            }
+
+            GameObject go = new(tag)
+            {
+                tag = tag
+            };
+
+            return go.AddComponent<T>();
+        }
     }
 }
