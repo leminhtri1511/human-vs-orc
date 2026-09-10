@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Foam
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -3794750738687043901, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
+  - {fileID: -4710801888167562894, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
   - {fileID: -5671047757210412307, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
   - {fileID: -2426117413377100321, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
   - {fileID: 3742273068816866060, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
@@ -21,8 +21,8 @@ MonoBehaviour:
   - {fileID: 7752229987998269982, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
   - {fileID: -4710801888167562894, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
   - {fileID: 6853023835892009477, guid: 55f3f198034181e468fb41a13ed9296c, type: 3}
-  m_MinSpeed: 10
-  m_MaxSpeed: 10
+  m_MinSpeed: 8
+  m_MaxSpeed: 8
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
