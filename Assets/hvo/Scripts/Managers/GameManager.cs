@@ -46,6 +46,11 @@ namespace HVO.Scripts.Managers
             return ActiveUnit != null;
         }
 
+        public bool IsHumanoidUnit(Unit unit)
+        {
+            return unit is HumanoidUnit;
+        }
+
         private void DetectClick(Vector2 inputPosition)
         {
             if (Camera.main == null) return;
@@ -95,7 +100,7 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit()) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
             DisplayClickEffect(inputPosition);
             ActiveUnit.MoveTo(inputPosition);
