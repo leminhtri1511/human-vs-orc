@@ -1,3 +1,5 @@
+using HVO.Scripts.UI;
+using HVO.Scripts.UI.Pool;
 using HVO.Scripts.Units;
 using UnityEngine;
 
@@ -5,8 +7,10 @@ namespace HVO.Scripts.Managers
 {
     public class GameManager : SingletonManager<GameManager>
     {
-        public Unit ActiveUnit;
+        [Header("UI")]
+        [SerializeField] private UIPointToClickPool _pointToClickPool;
 
+        public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
 
         private void Update()
@@ -42,10 +46,17 @@ namespace HVO.Scripts.Managers
             return ActiveUnit != null;
         }
 
+        public bool IsHumanoidUnit(Unit unit)
+        {
+            return unit is HumanoidUnit;
+        }
+
         private void DetectClick(Vector2 inputPosition)
         {
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(inputPosition);
-            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+            if (Camera.main == null) return;
+
+            var worldPoint = Camera.main.ScreenToWorldPoint(inputPosition);
+            var hit = Physics2D.Raycast(worldPoint, Vector2.zero);
 
             if (HasClickedOnUnit(hit, out var unit))
             {
@@ -71,7 +82,7 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnUnit(Unit unit)
         {
-            if (HasActiveUnit() && ActiveUnit == unit)
+            if (ActiveUnit == unit)
             {
                 ActiveUnit.ToggleUnitSelectedState(false);
                 ActiveUnit = null;
@@ -89,9 +100,23 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit()) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
+            DisplayClickEffect(inputPosition);
             ActiveUnit.MoveTo(inputPosition);
+        }
+
+        private void DisplayClickEffect(Vector2 worldPoint)
+        {
+            var point = _pointToClickPool.Get();
+
+            point.transform.SetPositionAndRotation(worldPoint, Quaternion.identity);
+            point.Play(ReleasePointToClick);
+        }
+
+        private void ReleasePointToClick(PointToClick point)
+        {
+            _pointToClickPool.Release(point);
         }
     }
 }
