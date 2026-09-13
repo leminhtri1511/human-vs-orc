@@ -32,7 +32,6 @@ namespace HVO.Scripts.Units
         {
             _spriteRenderer.material = _originalMaterial;
             _isMoving = false;
-            // m_HighlightMaterial = Resources.Load<Material>("Materials/Outline");
         }
 
         public void MoveTo(Vector3 destination)

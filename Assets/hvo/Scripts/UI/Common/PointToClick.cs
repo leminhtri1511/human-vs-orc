@@ -3,7 +3,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace HVO.Scripts.UI
+namespace HVO.Scripts.UI.Common
 {
     public class PointToClick : MonoBehaviour
     {
