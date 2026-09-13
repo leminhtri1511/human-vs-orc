@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace HVO.Scripts.UI
+namespace HVO.Scripts.UI.Pool
 {
     public class UIItemPool<TItem> : MonoBehaviour where TItem : MonoBehaviour
     {

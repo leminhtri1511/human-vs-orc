@@ -1,5 +1,4 @@
 using HVO.Scripts.UI;
-using HVO.Scripts.UI.Pool;
 using HVO.Scripts.Units;
 using UnityEngine;
 
@@ -7,8 +6,8 @@ namespace HVO.Scripts.Managers
 {
     public class GameManager : SingletonManager<GameManager>
     {
-        [Header("UI")]
-        [SerializeField] private UIPointToClickPool _pointToClickPool;
+        [Header("Controllers")]
+        [SerializeField] private UIViewHandle _uiViewHandle;
 
         public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
@@ -53,7 +52,7 @@ namespace HVO.Scripts.Managers
 
         private void DetectClick(Vector2 inputPosition)
         {
-            if (Camera.main == null) return;
+            if (Camera.main == null || _uiViewHandle.IsPointerOverUIObject()) return;
 
             var worldPoint = Camera.main.ScreenToWorldPoint(inputPosition);
             var hit = Physics2D.Raycast(worldPoint, Vector2.zero);
@@ -86,6 +85,7 @@ namespace HVO.Scripts.Managers
             {
                 ActiveUnit.ToggleUnitSelectedState(false);
                 ActiveUnit = null;
+                _uiViewHandle.ToggleActionBarState(false);
                 return;
             }
 
@@ -96,27 +96,20 @@ namespace HVO.Scripts.Managers
 
             ActiveUnit = unit;
             ActiveUnit.ToggleUnitSelectedState(true);
+            _uiViewHandle.ToggleActionBarState(true);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
             if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
-            DisplayClickEffect(inputPosition);
+            _uiViewHandle.DisplayClickEffect(inputPosition);
             ActiveUnit.MoveTo(inputPosition);
         }
 
-        private void DisplayClickEffect(Vector2 worldPoint)
+        public void Test()
         {
-            var point = _pointToClickPool.Get();
-
-            point.transform.SetPositionAndRotation(worldPoint, Quaternion.identity);
-            point.Play(ReleasePointToClick);
-        }
-
-        private void ReleasePointToClick(PointToClick point)
-        {
-            _pointToClickPool.Release(point);
+            Debug.Log("VAR");
         }
     }
 }
