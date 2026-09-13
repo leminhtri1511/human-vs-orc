@@ -2,7 +2,7 @@
 
 namespace HVO.Scripts.UI.Pool
 {
-    public class UIPointerPool : UIItemPool<UIPointer>
+    public class UIActionButtonPool : UIItemPool<UIActionButton>
     {
     }
 }

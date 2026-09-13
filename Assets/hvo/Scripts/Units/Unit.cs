@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HVO.Scripts.AI;
 using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
@@ -7,7 +8,7 @@ namespace HVO.Scripts.Units
     public abstract class Unit : MonoBehaviour
     {
         [Header("Data")]
-        [SerializeField] private ActionSO[] _actionSOs;
+        [SerializeField] private List<ActionSO> _actionSOList;
 
         [Header("AI")]
         [SerializeField] private AIPawn _aiPawn;
@@ -30,7 +31,8 @@ namespace HVO.Scripts.Units
             set => _isMoving = value;
         }
 
-        public ActionSO[] ActionSOs => _actionSOs;
+        public List<ActionSO> ActionSOList => _actionSOList;
+        public bool HasActionSO => ActionSOList.Count > 0;
 
         protected Animator UnitAnimator => _unitAnimator;
 

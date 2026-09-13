@@ -24,6 +24,7 @@ namespace HVO.Scripts.ScriptableObjects
 
         public override void Execute(GameManager gameManager)
         {
+            gameManager.StartBuildProgress(this);
         }
     }
 }
