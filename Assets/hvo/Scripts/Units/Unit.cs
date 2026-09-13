@@ -1,10 +1,14 @@
 using HVO.Scripts.AI;
+using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
 
 namespace HVO.Scripts.Units
 {
     public abstract class Unit : MonoBehaviour
     {
+        [Header("Data")]
+        [SerializeField] private ActionSO[] _actionSOs;
+
         [Header("AI")]
         [SerializeField] private AIPawn _aiPawn;
 
@@ -25,6 +29,8 @@ namespace HVO.Scripts.Units
             get => _isMoving;
             set => _isMoving = value;
         }
+
+        public ActionSO[] ActionSOs => _actionSOs;
 
         protected Animator UnitAnimator => _unitAnimator;
 
