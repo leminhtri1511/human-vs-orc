@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace HVO.Scripts.UI.Common
 {
-    public class PointToClick : MonoBehaviour
+    public class UIPointer : MonoBehaviour
     {
         [Header("UI")]
         [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -14,7 +14,7 @@ namespace HVO.Scripts.UI.Common
         [SerializeField] private float _delayBeforeFade = 0.4f;
         [SerializeField, Min(0f)] private float _fadeDuration = 0.2f;
 
-        private Action<PointToClick> _onCompleted;
+        private Action<UIPointer> _onCompleted;
         private CancellationTokenSource _cts;
         private Color _initialColor;
 
@@ -23,7 +23,7 @@ namespace HVO.Scripts.UI.Common
             _initialColor = _spriteRenderer.color;
         }
 
-        public void Play(Action<PointToClick> onCompleted)
+        public void Play(Action<UIPointer> onCompleted)
         {
             CancelPendingRelease();
 

@@ -1,3 +1,4 @@
+using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using UnityEngine;
@@ -6,6 +7,9 @@ namespace HVO.Scripts.Managers
 {
     public class GameManager : SingletonManager<GameManager>
     {
+        [Header("Events")]
+        [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
+
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
@@ -28,6 +32,11 @@ namespace HVO.Scripts.Managers
                     DetectClick(inputPosition);
                 }
             }
+        }
+
+        public void StartBuildProgress(ActionSO actionSO)
+        {
+            Debug.Log(actionSO.ActionName);
         }
 
         private static bool IsClicked()
@@ -83,12 +92,22 @@ namespace HVO.Scripts.Managers
         {
             if (ActiveUnit == unit)
             {
-                ActiveUnit.ToggleUnitSelectedState(false);
-                ActiveUnit = null;
-                _uiViewHandle.ToggleActionBarState(false);
+                DeselectUnit();
                 return;
             }
 
+            SelectUnit(unit);
+        }
+
+        private void DeselectUnit()
+        {
+            ActiveUnit.ToggleUnitSelectedState(false);
+            ActiveUnit = null;
+            _uiViewHandle.ToggleActionBarState(false);
+        }
+
+        private void SelectUnit(Unit unit)
+        {
             if (HasActiveUnit())
             {
                 ActiveUnit.ToggleUnitSelectedState(false);
@@ -97,6 +116,7 @@ namespace HVO.Scripts.Managers
             ActiveUnit = unit;
             ActiveUnit.ToggleUnitSelectedState(true);
             _uiViewHandle.ToggleActionBarState(true);
+            _uiViewHandle.InitializeUnitAction(this);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)

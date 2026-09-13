@@ -1,5 +1,8 @@
-﻿using HVO.Scripts.UI.Common;
+﻿using Cysharp.Threading.Tasks;
+using HVO.Scripts.Managers;
+using HVO.Scripts.UI.Common;
 using HVO.Scripts.UI.Pool;
+using HVO.Scripts.Units;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,11 +12,25 @@ namespace HVO.Scripts.UI
     {
         [Header("UI")]
         [SerializeField] private RectTransform _actionBarRT;
-        [SerializeField] private UIPointToClickPool _pointToClickPool;
+        [SerializeField] private UIActionBar _uiActionBar;
+
+        [Header("Pool")]
+        [SerializeField] private UIPointerPool _pointerPool;
 
         private void Start()
         {
             ToggleActionBarState(false);
+        }
+
+        public void InitializeUnitAction(GameManager gameManager)
+        {
+            if (!gameManager.ActiveUnit.HasActionSO)
+            {
+                ToggleActionBarState(false);
+                return;
+            }
+
+            _uiActionBar.SetupActionButtons(gameManager).Forget();
         }
 
         public void ToggleActionBarState(bool isActive)
@@ -23,15 +40,15 @@ namespace HVO.Scripts.UI
 
         public void DisplayClickEffect(Vector2 worldPoint)
         {
-            var point = _pointToClickPool.Get();
+            var point = _pointerPool.Get();
 
             point.transform.SetPositionAndRotation(worldPoint, Quaternion.identity);
             point.Play(ReleasePointToClick);
         }
 
-        private void ReleasePointToClick(PointToClick point)
+        private void ReleasePointToClick(UIPointer point)
         {
-            _pointToClickPool.Release(point);
+            _pointerPool.Release(point);
         }
 
         public bool IsPointerOverUIObject()
