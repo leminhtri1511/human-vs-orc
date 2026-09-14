@@ -16,7 +16,8 @@ namespace HVO.Scripts.Managers
         Elevations = -2,
         UnderTerrain = -1,
         Walkable = 0,
-        Unit = 1,
+        Unreachable = 1,
+        Unit = 2,
         Pointer = 10,
         PendingPlacement = 20,
         AlwaysOnTop = 100
@@ -30,6 +31,7 @@ namespace HVO.Scripts.Managers
         [Header("Tilemaps")]
         [SerializeField] private Tilemap _walkableTilemap;
         [SerializeField] private Tilemap _overlayTilemap;
+        [SerializeField] private Tilemap[] _unreachableTilemaps;
 
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
@@ -57,7 +59,7 @@ namespace HVO.Scripts.Managers
 
         public void StartBuildProgress(BuildActionSO buildActionSO)
         {
-            _placementProcess = new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap);
+            _placementProcess = new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
 
             _placementProcess.ShowPendingPlacement();
         }
