@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace HVO.Scripts.UI.Common
+namespace HVO.Scripts.UI.ConfirmationBuildBar
 {
     public class UIConfirmationBar : MonoBehaviour
     {

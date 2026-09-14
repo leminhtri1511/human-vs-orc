@@ -6,7 +6,7 @@ using HVO.Scripts.UI.Pool;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace HVO.Scripts.UI.Common
+namespace HVO.Scripts.UI.ActionBar
 {
     public class UIActionBar : MonoBehaviour
     {
