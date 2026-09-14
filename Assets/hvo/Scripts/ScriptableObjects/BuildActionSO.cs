@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using HVO.Scripts.Managers;
 using HVO.Scripts.Utils;
 using UnityEngine;
 
@@ -37,10 +36,5 @@ namespace HVO.Scripts.ScriptableObjects
         public Color InvalidColor => _invalidColor;
 
         public List<RequiredResourceConfig> RequiredResources => _requiredResources;
-
-        public override void Execute(GameManager gameManager)
-        {
-            gameManager.StartBuildProgress(this);
-        }
     }
 }

@@ -1,4 +1,5 @@
 using HVO.Scripts.ScriptableObjects;
+using HVO.Scripts.ScriptableObjects.Events;
 using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using HVO.Scripts.Utils;
@@ -20,13 +21,23 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
-        public Unit ActiveUnit { get; private set; }
+        private Unit _activeUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
 
         private void Update()
         {
             HandleTouchInput();
+        }
+
+        private void OnEnable()
+        {
+            _onUnitActionEvent.EventRaised += StartPendingPlacement;
+        }
+
+        private void OnDisable()
+        {
+            _onUnitActionEvent.EventRaised -= StartPendingPlacement;
         }
 
         private void HandleTouchInput()
@@ -41,8 +52,10 @@ namespace HVO.Scripts.Managers
             }
         }
 
-        public void StartBuildProgress(BuildActionSO buildActionSO)
+        private void StartPendingPlacement(BuildActionSO buildActionSO)
         {
+            if (_placementProcess != null) return;
+
             _placementProcess =
                 new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
 
@@ -51,7 +64,7 @@ namespace HVO.Scripts.Managers
 
         public bool HasActiveUnit()
         {
-            return ActiveUnit != null;
+            return _activeUnit != null;
         }
 
         public bool IsHumanoidUnit(Unit unit)
@@ -90,7 +103,7 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnUnit(Unit unit)
         {
-            if (ActiveUnit == unit)
+            if (_activeUnit == unit)
             {
                 DeselectUnit();
                 return;
@@ -101,8 +114,8 @@ namespace HVO.Scripts.Managers
 
         private void DeselectUnit()
         {
-            ActiveUnit.ToggleUnitSelectedState(false);
-            ActiveUnit = null;
+            _activeUnit.ToggleUnitSelectedState(false);
+            _activeUnit = null;
             _uiViewHandle.ToggleActionBarState(false);
         }
 
@@ -110,21 +123,21 @@ namespace HVO.Scripts.Managers
         {
             if (HasActiveUnit())
             {
-                ActiveUnit.ToggleUnitSelectedState(false);
+                _activeUnit.ToggleUnitSelectedState(false);
             }
 
-            ActiveUnit = unit;
-            ActiveUnit.ToggleUnitSelectedState(true);
+            _activeUnit = unit;
+            _activeUnit.ToggleUnitSelectedState(true);
             _uiViewHandle.ToggleActionBarState(true);
-            _uiViewHandle.InitializeUnitAction(this);
+            _uiViewHandle.InitializeUnitAction(_activeUnit);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(_activeUnit)) return;
 
             _uiViewHandle.DisplayClickEffect(inputPosition);
-            ActiveUnit.MoveTo(inputPosition);
+            _activeUnit.MoveTo(inputPosition);
         }
 
         public void Test()

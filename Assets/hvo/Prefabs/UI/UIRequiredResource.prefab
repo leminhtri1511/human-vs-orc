@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 611532341656877720}
   - component: {fileID: 8063963005581509700}
   - component: {fileID: 1281438348020049912}
+  - component: {fileID: -2696201513145561411}
   m_Layer: 0
   m_Name: UIRequiredResource
   m_TagString: Untagged
@@ -271,6 +272,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 13
+--- !u!114 &-2696201513145561411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920055092283383989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfb26915f814ae29e8b26d7fcbf272f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resourceIcon: {fileID: 7473230016037107906}
+  _requiredAmountText: {fileID: 3731111989696862188}
 --- !u!1 &8579896334654615808
 GameObject:
   m_ObjectHideFlags: 0

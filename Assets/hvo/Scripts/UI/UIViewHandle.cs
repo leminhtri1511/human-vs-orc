@@ -1,9 +1,10 @@
 ﻿using Cysharp.Threading.Tasks;
-using HVO.Scripts.Managers;
+using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.UI.ActionBar;
 using HVO.Scripts.UI.Common;
 using HVO.Scripts.UI.ConfirmationBuildBar;
 using HVO.Scripts.UI.Pool;
+using HVO.Scripts.Units;
 using UnityEngine;
 
 namespace HVO.Scripts.UI
@@ -21,7 +22,7 @@ namespace HVO.Scripts.UI
         [Header("Pool")]
         [SerializeField] private UIPointerPool _pointerPool;
 
-        private GameManager _gameManager;
+        private Unit _activeUnit;
 
         private void Start()
         {
@@ -43,16 +44,16 @@ namespace HVO.Scripts.UI
             _uiConfirmationBar.OnCancel -= CancelBuildSelected;
         }
 
-        public void InitializeUnitAction(GameManager gameManager)
+        public void InitializeUnitAction(Unit activeUnit)
         {
-            _gameManager = gameManager;
-            if (!gameManager.ActiveUnit.HasActionSO)
+            _activeUnit = activeUnit;
+            if (!activeUnit.HasActionSO)
             {
                 ToggleActionBarState(false);
                 return;
             }
 
-            _uiActionBar.SetupActionButtons(gameManager).Forget();
+            _uiActionBar.SetupActionButtons(activeUnit).Forget();
         }
 
         public void ToggleActionBarState(bool isActive) => _actionBarRT.gameObject.SetActive(isActive);
@@ -72,16 +73,17 @@ namespace HVO.Scripts.UI
             _pointerPool.Release(point);
         }
 
-        private void ActionSelected()
+        private void ActionSelected(BuildActionSO buildActionSO)
         {
             _uiActionBar.ReleasePool().Forget();
             ToggleConfirmationBarState(true);
+            _uiConfirmationBar.SetupRequiredResource(buildActionSO).Forget();
         }
 
         private void CancelBuildSelected()
         {
             ToggleConfirmationBarState(false);
-            _uiActionBar.SetupActionButtons(_gameManager).Forget();
+            _uiActionBar.SetupActionButtons(_activeUnit).Forget();
         }
 
         public void ConfirmBuildSelected()

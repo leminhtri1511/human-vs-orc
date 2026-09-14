@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using HVO.Scripts.Managers;
 using HVO.Scripts.ScriptableObjects;
+using HVO.Scripts.ScriptableObjects.Events;
 using HVO.Scripts.UI.Pool;
+using HVO.Scripts.Units;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,7 +11,7 @@ namespace HVO.Scripts.UI.ActionBar
 {
     public class UIActionBar : MonoBehaviour
     {
-        public UnityAction OnActionClick;
+        public UnityAction<BuildActionSO> OnActionClick;
         
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
@@ -22,14 +23,12 @@ namespace HVO.Scripts.UI.ActionBar
         [SerializeField] private UIActionButtonPool _actionButtonPool;
 
         private readonly List<UIActionButton> _cachedPool = new();
-        private GameManager _gameManager;
 
-        public async UniTask SetupActionButtons(GameManager gameManager)
+        public async UniTask SetupActionButtons(Unit activeUnit)
         {
-            _gameManager = gameManager;
             await ReleasePool();
 
-            foreach (var action in gameManager.ActiveUnit.ActionSOList)
+            foreach (var action in activeUnit.ActionSOList)
             {
                 var item = _actionButtonPool.Get(_rectTransform);
 
@@ -53,8 +52,8 @@ namespace HVO.Scripts.UI.ActionBar
 
         private void OnUnitAction(ActionSO action)
         {
-            action.Execute(_gameManager);
-            OnActionClick?.Invoke();
+            _onUnitActionEvent.RaiseEvent(action as BuildActionSO);
+            OnActionClick?.Invoke(action as BuildActionSO);
         }
     }
 }
