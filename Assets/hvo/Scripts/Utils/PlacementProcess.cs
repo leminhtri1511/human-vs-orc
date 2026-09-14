@@ -1,6 +1,7 @@
 ﻿using HVO.Scripts.Managers;
 using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace HVO.Scripts.Utils
 {
@@ -9,10 +10,14 @@ namespace HVO.Scripts.Utils
         private GameObject _pendingPlacement;
         private readonly BuildActionSO _buildActionSO;
         private Vector3Int[] _highlightPositions;
+        private readonly Tilemap _walkableTilemap;
+        private readonly Tilemap _overlayTilemap;
 
-        public PlacementProcess(BuildActionSO buildActionSO)
+        public PlacementProcess(BuildActionSO buildActionSO, Tilemap walkableTilemap, Tilemap overlayTilemap)
         {
             _buildActionSO = buildActionSO;
+            _walkableTilemap = walkableTilemap;
+            _overlayTilemap = overlayTilemap;
         }
 
         public void Update()
@@ -49,7 +54,9 @@ namespace HVO.Scripts.Utils
 
         private void HighlightTiles(Vector3 outlinePosition)
         {
-            var buildingSize = new Vector2Int(2, 3);
+            var buildingSize = _buildActionSO.BuildingSize;
+            var correctPosition = outlinePosition + _buildActionSO.OriginOffset;
+
             _highlightPositions = new Vector3Int[buildingSize.x * buildingSize.y];
 
             for (int x = 0; x < buildingSize.x; x++)
@@ -57,12 +64,18 @@ namespace HVO.Scripts.Utils
                 for (int y = 0; y < buildingSize.y; y++)
                 {
                     _highlightPositions[x + y * buildingSize.x] =
-                        new Vector3Int((int)outlinePosition.x + x, (int)outlinePosition.y + y, 0);
+                        new Vector3Int((int)correctPosition.x + x, (int)correctPosition.y + y, 0);
                 }
             }
 
             foreach (var tilePosition in _highlightPositions)
             {
+                var tile = ScriptableObject.CreateInstance<Tile>();
+
+                tile.sprite = _buildActionSO.OverlayPlacementSprite;
+                tile.color = _buildActionSO.ConfigColor;
+
+                _overlayTilemap.SetTile(tilePosition, tile);
             }
         }
     }
