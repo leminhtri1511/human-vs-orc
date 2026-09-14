@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6883182135277208264}
   - component: {fileID: 4671314976997927054}
   - component: {fileID: 1614073088101184439}
+  - component: {fileID: 2365160950863081035}
   m_Layer: 0
   m_Name: HumanoidUnit
   m_TagString: Untagged
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5cada37c63b97a49ab3c7895c602039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _actionSOList: []
   _aiPawn: {fileID: 4671314976997927054}
   _isTargeted: 0
   _isMoving: 0
@@ -191,3 +193,18 @@ MonoBehaviour:
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _unitAnimator: {fileID: 6782630124626923288}
   _spriteRenderer: {fileID: 6194344092666474080}
+--- !u!114 &2365160950863081035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431306953679626631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: 1
+  _defaultRenderer: {fileID: 6194344092666474080}
+  _tilemapRenderer: {fileID: 0}
