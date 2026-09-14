@@ -6,9 +6,9 @@ namespace HVO.Scripts.Utils
 {
     public class PlacementProcess
     {
-        private readonly BuildActionSO _buildActionSO;
         private GameObject _pendingPlacement;
-        private static Vector3 WorldPosition => HvoUtils.InputHoldWorldPosition;
+        private readonly BuildActionSO _buildActionSO;
+        private Vector3Int[] _highlightPositions;
 
         public PlacementProcess(BuildActionSO buildActionSO)
         {
@@ -17,14 +17,23 @@ namespace HVO.Scripts.Utils
 
         public void Update()
         {
+            HandlePlacementOutline();
+
             HandlePlacementPosition();
+        }
+
+        private void HandlePlacementOutline()
+        {
+            if (_pendingPlacement != null)
+            {
+                HighlightTiles(_pendingPlacement.transform.position);
+            }
         }
 
         private void HandlePlacementPosition()
         {
-            if (WorldPosition == Vector3.zero) return;
-
-            _pendingPlacement.transform.position = HvoUtils.SnapPlacementToGrid(WorldPosition);
+            if (HvoUtils.TryGetHoldPosition(out var worldPosition))
+                _pendingPlacement.transform.position = HvoUtils.SnapPlacementToGrid(worldPosition);
         }
 
         public void ShowPendingPlacement()
@@ -36,6 +45,25 @@ namespace HVO.Scripts.Utils
             spriteRenderer.sortingOrder = (int)OrderLayer.PendingPlacement;
             spriteRenderer.color = new Color(1, 1, 1, 0.65f);
             spriteRenderer.sprite = _buildActionSO.PlacementSprite;
+        }
+
+        private void HighlightTiles(Vector3 outlinePosition)
+        {
+            var buildingSize = new Vector2Int(2, 3);
+            _highlightPositions = new Vector3Int[buildingSize.x * buildingSize.y];
+
+            for (int x = 0; x < buildingSize.x; x++)
+            {
+                for (int y = 0; y < buildingSize.y; y++)
+                {
+                    _highlightPositions[x + y * buildingSize.x] =
+                        new Vector3Int((int)outlinePosition.x + x, (int)outlinePosition.y + y, 0);
+                }
+            }
+
+            foreach (var tilePosition in _highlightPositions)
+            {
+            }
         }
     }
 }
