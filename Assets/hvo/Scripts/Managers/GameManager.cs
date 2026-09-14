@@ -7,22 +7,6 @@ using UnityEngine.Tilemaps;
 
 namespace HVO.Scripts.Managers
 {
-    public enum OrderLayer
-    {
-        Unknown = -99,
-        Water = -5,
-        Rock = -4,
-        Foam = -3,
-        Elevations = -2,
-        UnderTerrain = -1,
-        Walkable = 0,
-        Unreachable = 1,
-        Unit = 2,
-        Pointer = 10,
-        PendingPlacement = 20,
-        AlwaysOnTop = 100
-    }
-
     public class GameManager : SingletonManager<GameManager>
     {
         [Header("Events")]
@@ -59,7 +43,8 @@ namespace HVO.Scripts.Managers
 
         public void StartBuildProgress(BuildActionSO buildActionSO)
         {
-            _placementProcess = new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
+            _placementProcess =
+                new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
 
             _placementProcess.ShowPendingPlacement();
         }

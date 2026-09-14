@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4216159001610897993}
   - component: {fileID: 2290401556493158263}
   m_Layer: 0
-  m_Name: Pointer
+  m_Name: UIPointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -19,9 +19,12 @@ MonoBehaviour:
   _foundationSprite: {fileID: 0}
   _completionSprite: {fileID: 0}
   _overlayPlacementSprite: {fileID: 21300000, guid: 3dacc20047937084680b0134e7faf58f, type: 3}
-  _goldCost: 0
-  _woodCost: 0
   _buildingSize: {x: 2, y: 3, z: 0}
   _originOffset: {x: -1, y: -2, z: 0}
   _validColor: {r: 0, g: 1, b: 0.018288612, a: 0.5019608}
   _invalidColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  _requiredResources:
+  - ResourceSO: {fileID: 11400000, guid: 226844e7edc8e3a40a8483d8dd8811db, type: 2}
+    RequiredAmount: 1000
+  - ResourceSO: {fileID: 11400000, guid: 645eabe68ef20a740ba5f5f71c334530, type: 2}
+    RequiredAmount: 10

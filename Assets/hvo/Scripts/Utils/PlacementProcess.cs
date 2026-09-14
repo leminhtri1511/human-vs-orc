@@ -1,5 +1,4 @@
-﻿using HVO.Scripts.Managers;
-using HVO.Scripts.ScriptableObjects;
+﻿using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -42,6 +41,8 @@ namespace HVO.Scripts.Utils
 
         private void HandlePlacementPosition()
         {
+            if (HvoUtils.IsPointerOverUIElement()) return;
+
             if (HvoUtils.TryGetHoldPosition(out var worldPosition))
                 _pendingPlacement.transform.position = HvoUtils.SnapPlacementToGrid(worldPosition);
         }
