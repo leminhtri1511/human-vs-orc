@@ -1,10 +1,25 @@
 using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.UI;
 using HVO.Scripts.Units;
+using HVO.Scripts.Utils;
 using UnityEngine;
 
 namespace HVO.Scripts.Managers
 {
+    public enum OrderLayer
+    {
+        Unknown = -99,
+        Water = -5,
+        Rock = -4,
+        Foam = -3,
+        Elevations = -2,
+        UnderTerrain = -1,
+        Walkable = 0,
+        Unit = 1,
+        Pointer = 10,
+        PendingPlacement = 20,
+    }
+
     public class GameManager : SingletonManager<GameManager>
     {
         [Header("Events")]
@@ -13,40 +28,33 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
-        public Unit ActiveUnit;
+        public Unit ActiveUnit { get; private set; }
+
         private Vector2 _initialTouchPosition;
+        private PlacementProcess _placementProcess;
 
         private void Update()
         {
-            Vector2 inputPosition = Input.touchCount > 0 ? Input.GetTouch(0).position : Input.mousePosition;
+            HandleTouchInput();
+        }
 
-            if (IsPressed())
+        private void HandleTouchInput()
+        {
+            if (_placementProcess != null)
             {
-                _initialTouchPosition = inputPosition;
+                _placementProcess.Update();
             }
-
-            if (IsClicked())
+            else if (HvoUtils.TryGetShortClickPosition(out var inputPosition))
             {
-                if (Vector2.Distance(_initialTouchPosition, inputPosition) < 10)
-                {
-                    DetectClick(inputPosition);
-                }
+                DetectClick(inputPosition);
             }
         }
 
-        public void StartBuildProgress(ActionSO actionSO)
+        public void StartBuildProgress(BuildActionSO buildActionSO)
         {
-            Debug.Log(actionSO.ActionName);
-        }
+            _placementProcess = new PlacementProcess(buildActionSO);
 
-        private static bool IsClicked()
-        {
-            return Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended);
-        }
-
-        private static bool IsPressed()
-        {
-            return Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+            _placementProcess.ShowPendingPlacement();
         }
 
         public bool HasActiveUnit()
@@ -61,7 +69,7 @@ namespace HVO.Scripts.Managers
 
         private void DetectClick(Vector2 inputPosition)
         {
-            if (Camera.main == null || _uiViewHandle.IsPointerOverUIObject()) return;
+            if (Camera.main == null || HvoUtils.IsPointerOverUIElement()) return;
 
             var worldPoint = Camera.main.ScreenToWorldPoint(inputPosition);
             var hit = Physics2D.Raycast(worldPoint, Vector2.zero);

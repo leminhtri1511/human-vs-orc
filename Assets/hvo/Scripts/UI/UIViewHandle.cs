@@ -2,9 +2,7 @@
 using HVO.Scripts.Managers;
 using HVO.Scripts.UI.Common;
 using HVO.Scripts.UI.Pool;
-using HVO.Scripts.Units;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace HVO.Scripts.UI
 {
@@ -49,19 +47,6 @@ namespace HVO.Scripts.UI
         private void ReleasePointToClick(UIPointer point)
         {
             _pointerPool.Release(point);
-        }
-
-        public bool IsPointerOverUIObject()
-        {
-            if (Input.touchCount > 0)
-            {
-                var touch = Input.GetTouch(0);
-                return EventSystem.current.IsPointerOverGameObject(touch.fingerId);
-            }
-            else
-            {
-                return EventSystem.current.IsPointerOverGameObject();
-            }
         }
     }
 }

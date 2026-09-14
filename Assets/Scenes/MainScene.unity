@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 299733202}
   - component: {fileID: 299733204}
   - component: {fileID: 299733203}
+  - component: {fileID: 299733205}
   m_Layer: 0
   m_Name: Walkable
   m_TagString: Untagged
@@ -1228,6 +1229,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &299733205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299733201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: 0
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 299733203}
 --- !u!1 &388614254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1512,7 @@ GameObject:
   - component: {fileID: 639392710}
   - component: {fileID: 639392712}
   - component: {fileID: 639392711}
+  - component: {fileID: 639392713}
   m_Layer: 0
   m_Name: Rocks
   m_TagString: Untagged
@@ -2090,6 +2107,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &639392713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639392709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: -4
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 639392711}
 --- !u!1 &649927225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +2217,7 @@ GameObject:
   - component: {fileID: 737715228}
   - component: {fileID: 737715230}
   - component: {fileID: 737715229}
+  - component: {fileID: 737715231}
   m_Layer: 0
   m_Name: Elevations
   m_TagString: Untagged
@@ -2480,6 +2513,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &737715231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737715227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: -2
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 737715229}
 --- !u!1 &1122568053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2767,7 @@ GameObject:
   - component: {fileID: 1513797752}
   - component: {fileID: 1513797754}
   - component: {fileID: 1513797753}
+  - component: {fileID: 1513797755}
   m_Layer: 0
   m_Name: Foam
   m_TagString: Untagged
@@ -3330,6 +3379,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1513797755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513797751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: -3
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 1513797753}
 --- !u!1 &1558353784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3374,6 +3438,7 @@ GameObject:
   - component: {fileID: 1673825047}
   - component: {fileID: 1673825049}
   - component: {fileID: 1673825048}
+  - component: {fileID: 1673825050}
   m_Layer: 0
   m_Name: UnderTerrain
   m_TagString: Untagged
@@ -4295,6 +4360,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1673825050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673825046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: -1
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 1673825048}
 --- !u!1 &1726531561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,7 +4421,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onUnitActionEvent: {fileID: 0}
   _uiViewHandle: {fileID: 12520741}
-  ActiveUnit: {fileID: 0}
 --- !u!1001 &1813158863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4431,6 +4510,7 @@ GameObject:
   - component: {fileID: 1997511712}
   - component: {fileID: 1997511714}
   - component: {fileID: 1997511713}
+  - component: {fileID: 1997511715}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -7207,6 +7287,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1997511715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997511711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _orderLayer: -5
+  _defaultRenderer: {fileID: 0}
+  _tilemapRenderer: {fileID: 1997511713}
 --- !u!1 &2090371813
 GameObject:
   m_ObjectHideFlags: 0
