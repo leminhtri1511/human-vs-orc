@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cfaf707dae1cb40488d50adb1365b32c
+guid: 3dacc20047937084680b0134e7faf58f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4866884309602757033
-    second: Tower_Blue_0
+      213: -6364335919513480655
+    second: img_shape_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,23 +97,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
+    buildTarget: Android
+    maxTextureSize: 64
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: 50
+    textureFormat: 45
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -123,10 +110,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 256
+    buildTarget: iOS
+    maxTextureSize: 64
     resizeAlgorithm: 0
-    textureFormat: 47
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tower_Blue_0
+      name: img_shape_1_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 21
-        width: 114
-        height: 183
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 756943b918a557cb0800000000000000
-      internalID: -4866884309602757033
+      spriteID: 132d32e63365da7a0800000000000000
+      internalID: -6364335919513480655
       vertices: []
       indices: 
       edges: []
@@ -164,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0255b53f41aa37b45845a6d6b13db45f
-    internalID: 786766774
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tower_Blue_0: -4866884309602757033
+      img_shape_1_0: -6364335919513480655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

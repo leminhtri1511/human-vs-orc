@@ -3,6 +3,7 @@ using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using HVO.Scripts.Utils;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace HVO.Scripts.Managers
 {
@@ -15,9 +16,11 @@ namespace HVO.Scripts.Managers
         Elevations = -2,
         UnderTerrain = -1,
         Walkable = 0,
-        Unit = 1,
+        Unreachable = 1,
+        Unit = 2,
         Pointer = 10,
         PendingPlacement = 20,
+        AlwaysOnTop = 100
     }
 
     public class GameManager : SingletonManager<GameManager>
@@ -25,11 +28,15 @@ namespace HVO.Scripts.Managers
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
 
+        [Header("Tilemaps")]
+        [SerializeField] private Tilemap _walkableTilemap;
+        [SerializeField] private Tilemap _overlayTilemap;
+        [SerializeField] private Tilemap[] _unreachableTilemaps;
+
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
         public Unit ActiveUnit { get; private set; }
-
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
 
@@ -52,7 +59,7 @@ namespace HVO.Scripts.Managers
 
         public void StartBuildProgress(BuildActionSO buildActionSO)
         {
-            _placementProcess = new PlacementProcess(buildActionSO);
+            _placementProcess = new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
 
             _placementProcess.ShowPendingPlacement();
         }

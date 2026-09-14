@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4671314976997927054}
   - component: {fileID: 1614073088101184439}
   - component: {fileID: 2365160950863081035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HumanoidUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2526443156231494169, guid: aacffa57ae78eb74895c2d126cec10f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
