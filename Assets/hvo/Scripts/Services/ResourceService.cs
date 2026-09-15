@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using HVO.Scripts.ScriptableObjects;
-using HVO.Scripts.Utils;
+using HVO.Scripts.Common;
 
 namespace HVO.Scripts.Services
 {

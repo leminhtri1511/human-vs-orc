@@ -1,7 +1,7 @@
 ﻿using System;
 using HVO.Scripts.ScriptableObjects;
 
-namespace HVO.Scripts.Utils
+namespace HVO.Scripts.Common
 {
     [Serializable]
     public struct ResourceInfo

@@ -1,6 +1,6 @@
 ﻿using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.Services;
-using HVO.Scripts.Utils;
+using HVO.Scripts.Common;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
