@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace HVO.Scripts.UI.Common
+namespace HVO.Scripts.UI.ActionBar
 {
     public class UIActionButton : MonoBehaviour
     {

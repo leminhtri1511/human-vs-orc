@@ -1,4 +1,6 @@
 using HVO.Scripts.ScriptableObjects;
+using HVO.Scripts.ScriptableObjects.Events;
+using HVO.Scripts.Services;
 using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using HVO.Scripts.Utils;
@@ -7,26 +9,13 @@ using UnityEngine.Tilemaps;
 
 namespace HVO.Scripts.Managers
 {
-    public enum OrderLayer
-    {
-        Unknown = -99,
-        Water = -5,
-        Rock = -4,
-        Foam = -3,
-        Elevations = -2,
-        UnderTerrain = -1,
-        Walkable = 0,
-        Unreachable = 1,
-        Unit = 2,
-        Pointer = 10,
-        PendingPlacement = 20,
-        AlwaysOnTop = 100
-    }
-
     public class GameManager : SingletonManager<GameManager>
     {
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
+
+        [Header("Data")]
+        [SerializeField] private MyWalletSO _myWalletSO;
 
         [Header("Tilemaps")]
         [SerializeField] private Tilemap _walkableTilemap;
@@ -36,13 +25,31 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
-        public Unit ActiveUnit { get; private set; }
+        private Unit _activeUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
+        private BuildActionSO _currentBuildActionSO;
+
+        private ResourceService _resourceService;
+
+        protected override void Awake()
+        {
+            _resourceService = new ResourceService(_myWalletSO);
+        }
 
         private void Update()
         {
             HandleTouchInput();
+        }
+
+        private void OnEnable()
+        {
+            _onUnitActionEvent.EventRaised += StartPendingPlacement;
+        }
+
+        private void OnDisable()
+        {
+            _onUnitActionEvent.EventRaised -= StartPendingPlacement;
         }
 
         private void HandleTouchInput()
@@ -57,16 +64,23 @@ namespace HVO.Scripts.Managers
             }
         }
 
-        public void StartBuildProgress(BuildActionSO buildActionSO)
+        private void StartPendingPlacement(BuildActionSO buildActionSO)
         {
-            _placementProcess = new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
+            if (_placementProcess != null) return;
 
+            _currentBuildActionSO = buildActionSO;
+
+            _placementProcess =
+                new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
             _placementProcess.ShowPendingPlacement();
+
+            _uiViewHandle.InitializeRequiredResource(buildActionSO);
+            _uiViewHandle.OnButtonsCallback(StartBuildingProgress, CancelBuildPlacement);
         }
 
         public bool HasActiveUnit()
         {
-            return ActiveUnit != null;
+            return _activeUnit != null;
         }
 
         public bool IsHumanoidUnit(Unit unit)
@@ -105,7 +119,7 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnUnit(Unit unit)
         {
-            if (ActiveUnit == unit)
+            if (_activeUnit == unit)
             {
                 DeselectUnit();
                 return;
@@ -116,8 +130,9 @@ namespace HVO.Scripts.Managers
 
         private void DeselectUnit()
         {
-            ActiveUnit.ToggleUnitSelectedState(false);
-            ActiveUnit = null;
+            _activeUnit.ToggleUnitSelectedState(false);
+            _activeUnit = null;
+
             _uiViewHandle.ToggleActionBarState(false);
         }
 
@@ -125,26 +140,62 @@ namespace HVO.Scripts.Managers
         {
             if (HasActiveUnit())
             {
-                ActiveUnit.ToggleUnitSelectedState(false);
+                _activeUnit.ToggleUnitSelectedState(false);
             }
 
-            ActiveUnit = unit;
-            ActiveUnit.ToggleUnitSelectedState(true);
+            _activeUnit = unit;
+            _activeUnit.ToggleUnitSelectedState(true);
+
             _uiViewHandle.ToggleActionBarState(true);
-            _uiViewHandle.InitializeUnitAction(this);
+            _uiViewHandle.InitializeUnitActions(_activeUnit);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(_activeUnit)) return;
 
             _uiViewHandle.DisplayClickEffect(inputPosition);
-            ActiveUnit.MoveTo(inputPosition);
+            _activeUnit.MoveTo(inputPosition);
         }
 
-        public void Test()
+        private void StartBuildingProgress()
         {
-            Debug.Log("VAR");
+            if (!HasEnoughResources())
+            {
+                Debug.Log("Not Enough Resources");
+                return;
+            }
+
+            if (!_placementProcess.TryFinalizePlacement(out var placementPosition))
+            {
+                Debug.Log("Placement Incorrect");
+                return;
+            }
+
+            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
+
+            ExecuteCallback();
+            Debug.Log($"Start build at: {placementPosition}");
+        }
+
+        private bool HasEnoughResources()
+        {
+            return _resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources);
+        }
+
+        private void CancelBuildPlacement()
+        {
+            _placementProcess.ClearPendingPlacement();
+
+            ExecuteCallback();
+            Debug.Log("Cancel placement");
+        }
+
+        private void ExecuteCallback()
+        {
+            _uiViewHandle.HandleBeforeCallback();
+            _placementProcess = null;
+            _currentBuildActionSO = null;
         }
     }
 }
