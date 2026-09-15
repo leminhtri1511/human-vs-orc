@@ -1,3 +1,4 @@
+using HVO.Scripts.Common;
 using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.ScriptableObjects.Events;
 using HVO.Scripts.Services;
@@ -161,24 +162,33 @@ namespace HVO.Scripts.Managers
 
         private void StartBuildingProgress()
         {
+            if (!CanStartBuild(out var placementPosition)) return;
+
+            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition);
+            ActiveUnit.MoveTo(placementPosition);
+            ActiveUnit.SetTask(UnitTask.Build);
+
+            ExecuteCallback();
+        }
+
+        private bool CanStartBuild(out Vector3 placementPosition)
+        {
             if (!_resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources))
             {
                 Debug.Log("Not Enough Resources");
-                return;
+                placementPosition = default;
+                return false;
             }
 
-            if (!_placementProcess.TryFinalizePlacement(out var placementPosition))
+            if (!_placementProcess.TryFinalizePlacement(out placementPosition))
             {
                 Debug.Log("Placement Incorrect");
-                return;
+                return false;
             }
 
-            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
+            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return false;
 
-            new BuildingProcess(_currentBuildActionSO, placementPosition);
-            ActiveUnit.MoveTo(placementPosition);
-
-            ExecuteCallback();
+            return true;
         }
 
         private void CancelBuildPlacement()

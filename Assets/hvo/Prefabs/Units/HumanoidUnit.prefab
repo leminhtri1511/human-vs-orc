@@ -193,6 +193,7 @@ MonoBehaviour:
   _originalMaterial: {fileID: 2100000, guid: d8950ba6061cc0847aadc4bacbb10a25, type: 2}
   _unitAnimator: {fileID: 6782630124626923288}
   _spriteRenderer: {fileID: 6194344092666474080}
+  _objectDetectionRadius: 2
 --- !u!114 &2365160950863081035
 MonoBehaviour:
   m_ObjectHideFlags: 0

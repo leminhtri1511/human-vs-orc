@@ -1,3 +1,4 @@
+using HVO.Scripts.Common;
 using UnityEngine;
 
 namespace HVO.Scripts.Units
@@ -16,27 +17,25 @@ namespace HVO.Scripts.Units
 
         private void Update()
         {
-            CalculateVelocity();
+            UpdateVelocity();
+            UpdateBehaviour();
         }
 
-        private void CalculateVelocity()
+        protected virtual void UpdateBehaviour()
         {
-            Vector3 positionDelta = transform.position - LastPosition;
+        }
 
-            Velocity = new Vector2(
-                positionDelta.x,
-                positionDelta.y
-            ) / Time.deltaTime;
+        protected virtual void UpdateVelocity()
+        {
+            var positionDelta = transform.position - LastPosition;
 
+            Velocity = new Vector2(positionDelta.x, positionDelta.y) / Time.deltaTime;
             LastPosition = transform.position;
 
-            UnitStateChecking();
-        }
+            var state = Velocity.magnitude > 0 ? UnitState.Moving : UnitState.Idle;
 
-        private void UnitStateChecking()
-        {
-            IsMoving = Velocity.magnitude > 0;
-            UnitAnimator.SetBool(IsMovingHash, IsMoving);
+            SetState(state);
+            UnitAnimator.SetBool(IsMovingHash, state == UnitState.Moving);
         }
     }
 }

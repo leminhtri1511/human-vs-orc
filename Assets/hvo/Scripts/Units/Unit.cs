@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using HVO.Scripts.AI;
+using HVO.Scripts.Common;
 using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
 
@@ -22,18 +23,20 @@ namespace HVO.Scripts.Units
         [SerializeField] private Material _originalMaterial;
         [SerializeField] private Animator _unitAnimator;
         [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private float _objectDetectionRadius = 3f;
 
+        public UnitState CurrentState { get; protected set; } = UnitState.Idle;
+        public UnitTask CurrentTask { get; protected set; } = UnitTask.Unknown;
         public bool IsTargeted => _isTargeted;
+        public List<ActionSO> ActionSOList => _actionSOList;
+        public bool HasActionSO => ActionSOList.Count > 0;
+        public SpriteRenderer SpriteRenderer => _spriteRenderer;
 
         public bool IsMoving
         {
             get => _isMoving;
             set => _isMoving = value;
         }
-
-        public List<ActionSO> ActionSOList => _actionSOList;
-        public bool HasActionSO => ActionSOList.Count > 0;
-        public SpriteRenderer SpriteRenderer => _spriteRenderer;
 
         protected Animator UnitAnimator => _unitAnimator;
 
@@ -49,6 +52,16 @@ namespace HVO.Scripts.Units
             _isTargeted = false;
         }
 
+        public void SetTask(UnitTask task)
+        {
+            OnSetTask(CurrentTask, task);
+        }
+
+        public void SetState(UnitState state)
+        {
+            OnSetState(CurrentState, state);
+        }
+
         public void MoveTo(Vector3 destination)
         {
             var direction = (destination - transform.position).normalized;
@@ -61,6 +74,27 @@ namespace HVO.Scripts.Units
         {
             _spriteRenderer.material = isSelected ? _highlightMaterial : _originalMaterial;
             _isTargeted = isSelected;
+        }
+
+        protected virtual void OnSetTask(UnitTask oldTask, UnitTask newTask)
+        {
+            CurrentTask = newTask;
+        }
+
+        protected virtual void OnSetState(UnitState oldState, UnitState newState)
+        {
+            CurrentState = newState;
+        }
+
+        protected Collider2D[] RunProximityObjectDetection()
+        {
+            return Physics2D.OverlapCircleAll(transform.position, _objectDetectionRadius);
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = new Color(0, 0, 1, 0.3f);
+            Gizmos.DrawSphere(transform.position, _objectDetectionRadius);
         }
     }
 }

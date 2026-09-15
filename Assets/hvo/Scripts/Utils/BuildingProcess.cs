@@ -22,6 +22,12 @@ namespace HVO.Scripts.Utils
 
             structure.SpriteRenderer.sprite = _buildActionSO.FoundationSprite;
             structure.transform.position = _placementPosition;
+            structure.RegisterProcess(this);
+        }
+
+        public void Update()
+        {
+            Debug.Log("UNDER CONSTRUCTION");
         }
     }
 }

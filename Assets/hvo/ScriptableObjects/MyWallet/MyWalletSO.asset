@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MyResources>k__BackingField:
   - ResourceSO: {fileID: 11400000, guid: 226844e7edc8e3a40a8483d8dd8811db, type: 2}
-    Amount: 93999
+    Amount: 99999
   - ResourceSO: {fileID: 11400000, guid: 645eabe68ef20a740ba5f5f71c334530, type: 2}
-    Amount: 939
+    Amount: 999
