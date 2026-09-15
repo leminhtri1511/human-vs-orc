@@ -205,6 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _orderLayer: 1
+  _orderLayer: 2
   _defaultRenderer: {fileID: 6194344092666474080}
   _tilemapRenderer: {fileID: 0}

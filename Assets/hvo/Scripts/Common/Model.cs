@@ -28,9 +28,10 @@ namespace HVO.Scripts.Common
         UnderTerrain = -1,
         Walkable = 0,
         Unreachable = 1,
-        Unit = 2,
+        Structure = 2,
+        Unit = 5,
         Pointer = 10,
-        PendingPlacement = 20,
+        Placement = 20,
         AlwaysOnTop = 100
     }
 }

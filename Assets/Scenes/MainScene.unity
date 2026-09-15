@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: '_actionSOList.Array.data[4]'
       value: 
       objectReference: {fileID: 11400000, guid: c6305c3593a24b94bb210e6e5ab25a4f, type: 2}
+    - target: {fileID: 2365160950863081035, guid: 5f854cd4bf917fa49bf3499f340f69d4, type: 3}
+      propertyPath: _orderLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5040089889172255140, guid: 5f854cd4bf917fa49bf3499f340f69d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -5978,6 +5982,10 @@ PrefabInstance:
       propertyPath: '_actionSOList.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: 0e2390ef40f7d1e45b0c522d259121fd, type: 2}
+    - target: {fileID: 2365160950863081035, guid: 5f854cd4bf917fa49bf3499f340f69d4, type: 3}
+      propertyPath: _orderLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5040089889172255140, guid: 5f854cd4bf917fa49bf3499f340f69d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5

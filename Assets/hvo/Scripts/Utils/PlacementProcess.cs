@@ -54,7 +54,7 @@ namespace HVO.Scripts.Utils
 
             var spriteRenderer = _pendingPlacement.AddComponent<SpriteRenderer>();
 
-            spriteRenderer.sortingOrder = (int)OrderLayer.PendingPlacement;
+            spriteRenderer.sortingOrder = (int)OrderLayer.Placement;
             spriteRenderer.color = new Color(1, 1, 1, 0.65f);
             spriteRenderer.sprite = _buildActionSO.PlacementSprite;
         }

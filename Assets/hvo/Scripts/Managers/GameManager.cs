@@ -28,8 +28,8 @@ namespace HVO.Scripts.Managers
         private Unit _activeUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
+        private BuildingProcess _buildingProcess;
         private BuildActionSO _currentBuildActionSO;
-
         private ResourceService _resourceService;
 
         protected override void Awake()
@@ -160,7 +160,7 @@ namespace HVO.Scripts.Managers
 
         private void StartBuildingProgress()
         {
-            if (!HasEnoughResources())
+            if (!_resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources))
             {
                 Debug.Log("Not Enough Resources");
                 return;
@@ -174,13 +174,10 @@ namespace HVO.Scripts.Managers
 
             if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
 
-            ExecuteCallback();
-            Debug.Log($"Start build at: {placementPosition}");
-        }
+            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition);
+            _activeUnit.MoveTo(placementPosition);
 
-        private bool HasEnoughResources()
-        {
-            return _resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources);
+            ExecuteCallback();
         }
 
         private void CancelBuildPlacement()
@@ -188,7 +185,6 @@ namespace HVO.Scripts.Managers
             _placementProcess.ClearPendingPlacement();
 
             ExecuteCallback();
-            Debug.Log("Cancel placement");
         }
 
         private void ExecuteCallback()
