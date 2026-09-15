@@ -33,13 +33,20 @@ namespace HVO.Scripts.Units
 
         public List<ActionSO> ActionSOList => _actionSOList;
         public bool HasActionSO => ActionSOList.Count > 0;
+        public SpriteRenderer SpriteRenderer => _spriteRenderer;
 
         protected Animator UnitAnimator => _unitAnimator;
 
         private void Awake()
         {
+            OnAwake();
+        }
+
+        private void OnAwake()
+        {
             _spriteRenderer.material = _originalMaterial;
             _isMoving = false;
+            _isTargeted = false;
         }
 
         public void MoveTo(Vector3 destination)
@@ -47,7 +54,7 @@ namespace HVO.Scripts.Units
             var direction = (destination - transform.position).normalized;
             _spriteRenderer.flipX = direction.x < 0;
 
-            _aiPawn.SetDestination(destination);
+            _aiPawn?.SetDestination(destination);
         }
 
         public void ToggleUnitSelectedState(bool isSelected)

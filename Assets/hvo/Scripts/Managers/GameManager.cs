@@ -26,7 +26,7 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
-        private Unit _activeUnit;
+        public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
         private BuildingProcess _buildingProcess;
@@ -81,7 +81,7 @@ namespace HVO.Scripts.Managers
 
         public bool HasActiveUnit()
         {
-            return _activeUnit != null;
+            return ActiveUnit != null;
         }
 
         public bool IsHumanoidUnit(Unit unit)
@@ -120,7 +120,7 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnUnit(Unit unit)
         {
-            if (_activeUnit == unit)
+            if (ActiveUnit == unit)
             {
                 DeselectUnit();
                 return;
@@ -131,8 +131,8 @@ namespace HVO.Scripts.Managers
 
         private void DeselectUnit()
         {
-            _activeUnit.ToggleUnitSelectedState(false);
-            _activeUnit = null;
+            ActiveUnit.ToggleUnitSelectedState(false);
+            ActiveUnit = null;
 
             _uiViewHandle.ToggleActionBarState(false);
         }
@@ -141,22 +141,22 @@ namespace HVO.Scripts.Managers
         {
             if (HasActiveUnit())
             {
-                _activeUnit.ToggleUnitSelectedState(false);
+                ActiveUnit.ToggleUnitSelectedState(false);
             }
 
-            _activeUnit = unit;
-            _activeUnit.ToggleUnitSelectedState(true);
+            ActiveUnit = unit;
+            ActiveUnit.ToggleUnitSelectedState(true);
 
             _uiViewHandle.ToggleActionBarState(true);
-            _uiViewHandle.InitializeUnitActions(_activeUnit);
+            _uiViewHandle.InitializeUnitActions(ActiveUnit);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit() || !IsHumanoidUnit(_activeUnit)) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
             _uiViewHandle.DisplayClickEffect(inputPosition);
-            _activeUnit.MoveTo(inputPosition);
+            ActiveUnit.MoveTo(inputPosition);
         }
 
         private void StartBuildingProgress()
@@ -175,8 +175,8 @@ namespace HVO.Scripts.Managers
 
             if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
 
-            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition);
-            _activeUnit.MoveTo(placementPosition);
+            new BuildingProcess(_currentBuildActionSO, placementPosition);
+            ActiveUnit.MoveTo(placementPosition);
 
             ExecuteCallback();
         }

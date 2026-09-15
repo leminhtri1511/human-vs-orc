@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuildActionSO
   m_EditorClassIdentifier: 
   ActionIcon: {fileID: 21300000, guid: cfaf707dae1cb40488d50adb1365b32c, type: 3}
-  ActionName: Build Tower
+  ActionName: Build_Tower
   Guid: 50da8ff9-8a7a-4516-b9d6-a5c9d72cc89d
   ValidColor:
     serializedVersion: 2
@@ -21,9 +21,10 @@ MonoBehaviour:
   InvalidColor:
     serializedVersion: 2
     rgba: 2147492607
+  _structurePrefab: {fileID: 8225056052734761805, guid: 6e9533d40e08cfa459dadda89acdb329, type: 3}
   _placementSprite: {fileID: 21300000, guid: cfaf707dae1cb40488d50adb1365b32c, type: 3}
   _foundationSprite: {fileID: 21300000, guid: 6dbc3f086aa4f194291db8121252e66e, type: 3}
-  _completionSprite: {fileID: 0}
+  _completionSprite: {fileID: 21300000, guid: cfaf707dae1cb40488d50adb1365b32c, type: 3}
   _overlayPlacementSprite: {fileID: 21300000, guid: 3dacc20047937084680b0134e7faf58f, type: 3}
   _buildingSize: {x: 2, y: 3, z: 0}
   _originOffset: {x: -1, y: -2, z: 0}

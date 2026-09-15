@@ -9176,7 +9176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _orderLayer: 2
+  _orderLayer: 5
   _defaultRenderer: {fileID: 6194344092671406900}
   _tilemapRenderer: {fileID: 0}
 --- !u!114 &2365160952405636484
@@ -9191,7 +9191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4897eabaff064cc38738390f274631b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _orderLayer: 2
+  _orderLayer: 5
   _defaultRenderer: {fileID: 6194344094211126703}
   _tilemapRenderer: {fileID: 0}
 --- !u!114 &4671314976260944705
@@ -9518,7 +9518,7 @@ GameObject:
   - component: {fileID: 2365160952405636484}
   - component: {fileID: 7431306954282400329}
   m_Layer: 6
-  m_Name: Builder
+  m_Name: Worker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

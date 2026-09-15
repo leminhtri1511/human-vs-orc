@@ -1,5 +1,4 @@
-﻿using HVO.Scripts.Common;
-using HVO.Scripts.ScriptableObjects;
+﻿using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
 
 namespace HVO.Scripts.Utils
@@ -19,12 +18,10 @@ namespace HVO.Scripts.Utils
 
         private void SetupStructure()
         {
-            var structureGo = new GameObject(_buildActionSO.ActionName);
-            var renderer = structureGo.AddComponent<SpriteRenderer>();
+            var structure = Object.Instantiate(_buildActionSO.StructurePrefab);
 
-            renderer.sortingOrder = (int)OrderLayer.Structure;
-            renderer.sprite = _buildActionSO.FoundationSprite;
-            renderer.transform.position = _placementPosition;
+            structure.SpriteRenderer.sprite = _buildActionSO.FoundationSprite;
+            structure.transform.position = _placementPosition;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using HVO.Scripts.Common;
+using HVO.Scripts.Units;
 using UnityEngine;
 
 namespace HVO.Scripts.ScriptableObjects
@@ -7,7 +8,10 @@ namespace HVO.Scripts.ScriptableObjects
     [CreateAssetMenu(fileName = "BuildActionSO", menuName = "HVO/Actions/BuildActionSO")]
     public class BuildActionSO : ActionSO
     {
-        [Header("Action Sprites")]
+        [Header("Prefabs")]
+        [SerializeField] private StructureUnit _structurePrefab;
+
+        [Header("Sprites")]
         [SerializeField] private Sprite _placementSprite;
         [SerializeField] private Sprite _foundationSprite;
         [SerializeField] private Sprite _completionSprite;
@@ -29,5 +33,7 @@ namespace HVO.Scripts.ScriptableObjects
         public Vector3Int OriginOffset => _originOffset;
 
         public List<ResourceInfo> RequiredResources => _requiredResources;
+
+        public StructureUnit StructurePrefab => _structurePrefab;
     }
 }
