@@ -13,6 +13,7 @@ namespace HVO.Scripts.Managers
     {
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
+        [SerializeField] private OnWalletUpdateEvent _onWalletUpdateEvent;
 
         [Header("Data")]
         [SerializeField] private MyWalletSO _myWalletSO;
@@ -34,7 +35,7 @@ namespace HVO.Scripts.Managers
 
         protected override void Awake()
         {
-            _resourceService = new ResourceService(_myWalletSO);
+            _resourceService = new ResourceService(_myWalletSO, _onWalletUpdateEvent);
         }
 
         private void Update()
