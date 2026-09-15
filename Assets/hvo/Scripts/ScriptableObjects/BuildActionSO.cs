@@ -17,12 +17,8 @@ namespace HVO.Scripts.ScriptableObjects
         [SerializeField] private Vector3Int _buildingSize;
         [SerializeField] private Vector3Int _originOffset;
 
-        [Header("Colors")]
-        [SerializeField] private Color _validColor;
-        [SerializeField] private Color _invalidColor;
-
         [Header("Required Resources")]
-        [SerializeField] private List<RequiredResourceConfig> _requiredResources;
+        [SerializeField] private List<ResourceInfo> _requiredResources;
 
         public Sprite PlacementSprite => _placementSprite;
         public Sprite FoundationSprite => _foundationSprite;
@@ -32,9 +28,6 @@ namespace HVO.Scripts.ScriptableObjects
         public Vector3Int BuildingSize => _buildingSize;
         public Vector3Int OriginOffset => _originOffset;
 
-        public Color ValidColor => _validColor;
-        public Color InvalidColor => _invalidColor;
-
-        public List<RequiredResourceConfig> RequiredResources => _requiredResources;
+        public List<ResourceInfo> RequiredResources => _requiredResources;
     }
 }

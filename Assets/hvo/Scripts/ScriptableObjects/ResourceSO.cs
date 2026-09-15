@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace HVO.Scripts.ScriptableObjects
 {
-    [CreateAssetMenu(fileName = "RequiredResourceSO", menuName = "HVO/Resources/RequiredResourceSO")]
-    public class RequiredResourceSO : ScriptableObject
+    [CreateAssetMenu(fileName = "ResourceSO", menuName = "HVO/Resources/ResourceSO")]
+    public class ResourceSO : ScriptableObject
     {
         [Header("Configs")]
         [SerializeField] private GameResourcesType _resourceType = GameResourcesType.Unknown;

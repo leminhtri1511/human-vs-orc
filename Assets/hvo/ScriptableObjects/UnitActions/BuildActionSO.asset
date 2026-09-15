@@ -15,16 +15,20 @@ MonoBehaviour:
   ActionIcon: {fileID: 21300000, guid: cfaf707dae1cb40488d50adb1365b32c, type: 3}
   ActionName: Build Tower
   Guid: 50da8ff9-8a7a-4516-b9d6-a5c9d72cc89d
+  _validPlacementColor:
+    serializedVersion: 2
+    rgba: 2063662873
+  _invalidPlacementColor:
+    serializedVersion: 2
+    rgba: 2147492607
   _placementSprite: {fileID: 21300000, guid: cfaf707dae1cb40488d50adb1365b32c, type: 3}
   _foundationSprite: {fileID: 0}
   _completionSprite: {fileID: 0}
   _overlayPlacementSprite: {fileID: 21300000, guid: 3dacc20047937084680b0134e7faf58f, type: 3}
   _buildingSize: {x: 2, y: 3, z: 0}
   _originOffset: {x: -1, y: -2, z: 0}
-  _validColor: {r: 0, g: 1, b: 0.018288612, a: 0.5019608}
-  _invalidColor: {r: 1, g: 0, b: 0, a: 0.5019608}
   _requiredResources:
   - ResourceSO: {fileID: 11400000, guid: 226844e7edc8e3a40a8483d8dd8811db, type: 2}
-    RequiredAmount: 1000
+    Amount: 1000
   - ResourceSO: {fileID: 11400000, guid: 645eabe68ef20a740ba5f5f71c334530, type: 2}
-    RequiredAmount: 10
+    Amount: 10

@@ -95,7 +95,7 @@ namespace HVO.Scripts.Utils
             }
         }
 
-        private bool CanPlaceTile(Vector3Int tilePosition)
+        public bool CanPlaceTile(Vector3Int tilePosition)
         {
             return _walkableTilemap.HasTile(tilePosition) &&
                    !IsUnreachableTilemap(tilePosition) &&
@@ -124,6 +124,36 @@ namespace HVO.Scripts.Utils
             }
 
             return false;
+        }
+
+        public bool TryFinalizePlacement(out Vector3 placementPosition)
+        {
+            if (IsPlacementAreaValid())
+            {
+                ClearHighlightTiles();
+                placementPosition = _pendingPlacement.transform.position;
+                Object.Destroy(_pendingPlacement);
+                return true;
+            }
+
+            placementPosition = Vector3.zero;
+            return false;
+        }
+
+        private bool IsPlacementAreaValid()
+        {
+            foreach (var tilePosition in _highlightPositions)
+            {
+                if (!CanPlaceTile(tilePosition)) return false;
+            }
+
+            return true;
+        }
+
+        public void ClearPendingPlacement()
+        {
+            ClearHighlightTiles();
+            Object.Destroy(_pendingPlacement);
         }
     }
 }

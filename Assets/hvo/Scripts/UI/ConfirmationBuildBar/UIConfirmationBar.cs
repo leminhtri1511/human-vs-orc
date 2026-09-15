@@ -10,8 +10,8 @@ namespace HVO.Scripts.UI.ConfirmationBuildBar
 {
     public class UIConfirmationBar : MonoBehaviour
     {
-        public UnityAction OnConfirm;
-        public UnityAction OnCancel;
+        [Header("Data")]
+        [SerializeField] private MyWalletSO _myWalletSO;
 
         [Header("Buttons")]
         [SerializeField] private Button _confirmButton;
@@ -25,29 +25,13 @@ namespace HVO.Scripts.UI.ConfirmationBuildBar
 
         private readonly List<UIRequiredResource> _cachePool = new();
 
-        private void OnEnable()
-        {
-            _confirmButton.onClick.AddListener(OnConfirmButtonClicked);
-            _cancelButton.onClick.AddListener(OnCancelButtonClicked);
-        }
-
         private void OnDisable()
         {
-            _confirmButton.onClick.RemoveListener(OnConfirmButtonClicked);
-            _cancelButton.onClick.RemoveListener(OnCancelButtonClicked);
+            _confirmButton.onClick.RemoveAllListeners();
+            _cancelButton.onClick.RemoveAllListeners();
         }
 
-        private void OnConfirmButtonClicked()
-        {
-            OnConfirm?.Invoke();
-        }
-
-        private void OnCancelButtonClicked()
-        {
-            OnCancel?.Invoke();
-        }
-
-        public async UniTask SetupRequiredResource(BuildActionSO buildActionSO)
+        public async UniTask SetupRequiredResources(BuildActionSO buildActionSO)
         {
             await _requiredResourcePool.ClearPool(_cachePool);
 
@@ -59,6 +43,15 @@ namespace HVO.Scripts.UI.ConfirmationBuildBar
 
                 _cachePool.Add(uiRequiredResource);
             }
+        }
+
+        public void ButtonHooks(UnityAction onConfirm, UnityAction onCancel)
+        {
+            _confirmButton.onClick.RemoveAllListeners();
+            _cancelButton.onClick.RemoveAllListeners();
+
+            _confirmButton.onClick.AddListener(onConfirm);
+            _cancelButton.onClick.AddListener(onCancel);
         }
     }
 }

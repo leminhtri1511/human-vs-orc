@@ -6,6 +6,7 @@ using HVO.Scripts.UI.ConfirmationBuildBar;
 using HVO.Scripts.UI.Pool;
 using HVO.Scripts.Units;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HVO.Scripts.UI
 {
@@ -23,30 +24,22 @@ namespace HVO.Scripts.UI
         [SerializeField] private UIPointerPool _pointerPool;
 
         private Unit _activeUnit;
+        private UnityAction _confirmBuild;
+        private UnityAction _cancelBuild;
 
         private void Start()
         {
-            ToggleActionBarState(false);
             ToggleConfirmationBarState(false);
+            ToggleActionBarState(false);
         }
 
-        private void OnEnable()
-        {
-            _uiActionBar.OnActionClick += ActionSelected;
-            _uiConfirmationBar.OnConfirm += ConfirmBuildSelected;
-            _uiConfirmationBar.OnCancel += CancelBuildSelected;
-        }
+        public void ToggleActionBarState(bool isActive) => _actionBarRT.gameObject.SetActive(isActive);
+        public void ToggleConfirmationBarState(bool isActive) => _confirmationBarRT.gameObject.SetActive(isActive);
 
-        private void OnDisable()
-        {
-            _uiActionBar.OnActionClick -= ActionSelected;
-            _uiConfirmationBar.OnConfirm -= ConfirmBuildSelected;
-            _uiConfirmationBar.OnCancel -= CancelBuildSelected;
-        }
-
-        public void InitializeUnitAction(Unit activeUnit)
+        public void InitializeUnitActions(Unit activeUnit)
         {
             _activeUnit = activeUnit;
+
             if (!activeUnit.HasActionSO)
             {
                 ToggleActionBarState(false);
@@ -56,9 +49,13 @@ namespace HVO.Scripts.UI
             _uiActionBar.SetupActionButtons(activeUnit).Forget();
         }
 
-        public void ToggleActionBarState(bool isActive) => _actionBarRT.gameObject.SetActive(isActive);
+        public void InitializeRequiredResource(BuildActionSO buildActionSO)
+        {
+            _uiActionBar.ReleasePool().Forget();
+            ToggleConfirmationBarState(true);
 
-        public void ToggleConfirmationBarState(bool isActive) => _confirmationBarRT.gameObject.SetActive(isActive);
+            _uiConfirmationBar.SetupRequiredResources(buildActionSO).Forget();
+        }
 
         public void DisplayClickEffect(Vector2 worldPoint)
         {
@@ -73,21 +70,15 @@ namespace HVO.Scripts.UI
             _pointerPool.Release(point);
         }
 
-        private void ActionSelected(BuildActionSO buildActionSO)
+        public void OnButtonsCallback(UnityAction onConfirm, UnityAction onCancel)
         {
-            _uiActionBar.ReleasePool().Forget();
-            ToggleConfirmationBarState(true);
-            _uiConfirmationBar.SetupRequiredResource(buildActionSO).Forget();
+            _uiConfirmationBar.ButtonHooks(onConfirm, onCancel);
         }
 
-        private void CancelBuildSelected()
+        public void HandleBeforeCallback()
         {
             ToggleConfirmationBarState(false);
             _uiActionBar.SetupActionButtons(_activeUnit).Forget();
-        }
-
-        public void ConfirmBuildSelected()
-        {
         }
     }
 }

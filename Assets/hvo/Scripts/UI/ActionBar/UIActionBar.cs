@@ -5,14 +5,11 @@ using HVO.Scripts.ScriptableObjects.Events;
 using HVO.Scripts.UI.Pool;
 using HVO.Scripts.Units;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace HVO.Scripts.UI.ActionBar
 {
     public class UIActionBar : MonoBehaviour
     {
-        public UnityAction<BuildActionSO> OnActionClick;
-        
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
 
@@ -30,12 +27,12 @@ namespace HVO.Scripts.UI.ActionBar
 
             foreach (var action in activeUnit.ActionSOList)
             {
-                var item = _actionButtonPool.Get(_rectTransform);
+                var uiActionButton = _actionButtonPool.Get(_rectTransform);
 
-                item.Initialize(action);
-                item.OnActionButtonClicked += OnUnitAction;
+                uiActionButton.Initialize(action);
+                uiActionButton.OnActionButtonClicked += OnUnitAction;
 
-                _cachedPool.Add(item);
+                _cachedPool.Add(uiActionButton);
             }
         }
 
@@ -53,7 +50,6 @@ namespace HVO.Scripts.UI.ActionBar
         private void OnUnitAction(ActionSO action)
         {
             _onUnitActionEvent.RaiseEvent(action as BuildActionSO);
-            OnActionClick?.Invoke(action as BuildActionSO);
         }
     }
 }

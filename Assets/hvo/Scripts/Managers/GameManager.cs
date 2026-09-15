@@ -1,5 +1,6 @@
 using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.ScriptableObjects.Events;
+using HVO.Scripts.Services;
 using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using HVO.Scripts.Utils;
@@ -13,6 +14,9 @@ namespace HVO.Scripts.Managers
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
 
+        [Header("Data")]
+        [SerializeField] private MyWalletSO _myWalletSO;
+
         [Header("Tilemaps")]
         [SerializeField] private Tilemap _walkableTilemap;
         [SerializeField] private Tilemap _overlayTilemap;
@@ -24,6 +28,14 @@ namespace HVO.Scripts.Managers
         private Unit _activeUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
+        private BuildActionSO _currentBuildActionSO;
+
+        private ResourceService _resourceService;
+
+        protected override void Awake()
+        {
+            _resourceService = new ResourceService(_myWalletSO);
+        }
 
         private void Update()
         {
@@ -56,10 +68,14 @@ namespace HVO.Scripts.Managers
         {
             if (_placementProcess != null) return;
 
+            _currentBuildActionSO = buildActionSO;
+
             _placementProcess =
                 new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
-
             _placementProcess.ShowPendingPlacement();
+
+            _uiViewHandle.InitializeRequiredResource(buildActionSO);
+            _uiViewHandle.OnButtonsCallback(StartBuildingProgress, CancelBuildPlacement);
         }
 
         public bool HasActiveUnit()
@@ -116,6 +132,7 @@ namespace HVO.Scripts.Managers
         {
             _activeUnit.ToggleUnitSelectedState(false);
             _activeUnit = null;
+
             _uiViewHandle.ToggleActionBarState(false);
         }
 
@@ -128,8 +145,9 @@ namespace HVO.Scripts.Managers
 
             _activeUnit = unit;
             _activeUnit.ToggleUnitSelectedState(true);
+
             _uiViewHandle.ToggleActionBarState(true);
-            _uiViewHandle.InitializeUnitAction(_activeUnit);
+            _uiViewHandle.InitializeUnitActions(_activeUnit);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
@@ -140,9 +158,44 @@ namespace HVO.Scripts.Managers
             _activeUnit.MoveTo(inputPosition);
         }
 
-        public void Test()
+        private void StartBuildingProgress()
         {
-            Debug.Log("VAR");
+            if (!HasEnoughResources())
+            {
+                Debug.Log("Not Enough Resources");
+                return;
+            }
+
+            if (!_placementProcess.TryFinalizePlacement(out var placementPosition))
+            {
+                Debug.Log("Placement Incorrect");
+                return;
+            }
+
+            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
+
+            ExecuteCallback();
+            Debug.Log($"Start build at: {placementPosition}");
+        }
+
+        private bool HasEnoughResources()
+        {
+            return _resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources);
+        }
+
+        private void CancelBuildPlacement()
+        {
+            _placementProcess.ClearPendingPlacement();
+
+            ExecuteCallback();
+            Debug.Log("Cancel placement");
+        }
+
+        private void ExecuteCallback()
+        {
+            _uiViewHandle.HandleBeforeCallback();
+            _placementProcess = null;
+            _currentBuildActionSO = null;
         }
     }
 }

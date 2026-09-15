@@ -4,10 +4,10 @@ using HVO.Scripts.ScriptableObjects;
 namespace HVO.Scripts.Utils
 {
     [Serializable]
-    public struct RequiredResourceConfig
+    public struct ResourceInfo
     {
-        public RequiredResourceSO ResourceSO;
-        public int RequiredAmount;
+        public ResourceSO ResourceSO;
+        public int Amount;
     }
 
     public enum GameResourcesType
