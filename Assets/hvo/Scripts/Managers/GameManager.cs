@@ -13,6 +13,7 @@ namespace HVO.Scripts.Managers
     {
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
+        [SerializeField] private OnWalletUpdateEvent _onWalletUpdateEvent;
 
         [Header("Data")]
         [SerializeField] private MyWalletSO _myWalletSO;
@@ -25,21 +26,27 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
-        private Unit _activeUnit;
+        [Header("VFX")]
+        [SerializeField] private ParticleSystem _constructionEffect;
+
+        public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
+        private BuildingProcess _buildingProcess;
         private BuildActionSO _currentBuildActionSO;
-
         private ResourceService _resourceService;
 
         protected override void Awake()
         {
-            _resourceService = new ResourceService(_myWalletSO);
+            _resourceService = new ResourceService(_myWalletSO, _onWalletUpdateEvent);
         }
 
         private void Update()
         {
             HandleTouchInput();
+
+            if (ActiveUnit is null) return;
+            Debug.Log($"State: {ActiveUnit.CurrentState} | Task: {ActiveUnit.CurrentTask}");
         }
 
         private void OnEnable()
@@ -80,7 +87,7 @@ namespace HVO.Scripts.Managers
 
         public bool HasActiveUnit()
         {
-            return _activeUnit != null;
+            return ActiveUnit != null;
         }
 
         public bool IsHumanoidUnit(Unit unit)
@@ -119,19 +126,31 @@ namespace HVO.Scripts.Managers
 
         private void HandleClickOnUnit(Unit unit)
         {
-            if (_activeUnit == unit)
+            if (ActiveUnit == unit)
             {
                 DeselectUnit();
+                return;
+            }
+
+            if (WorkerClickedOnUnderConstruction(unit))
+            {
+                ((WorkerUnit)ActiveUnit).SendToBuild(unit as StructureUnit);
                 return;
             }
 
             SelectUnit(unit);
         }
 
+        private bool WorkerClickedOnUnderConstruction(Unit clickedUnit)
+        {
+            return ActiveUnit is WorkerUnit &&
+                   clickedUnit is StructureUnit { IsUnderConstruction: true };
+        }
+
         private void DeselectUnit()
         {
-            _activeUnit.ToggleUnitSelectedState(false);
-            _activeUnit = null;
+            ActiveUnit.ToggleUnitSelectedState(false);
+            ActiveUnit = null;
 
             _uiViewHandle.ToggleActionBarState(false);
         }
@@ -140,47 +159,55 @@ namespace HVO.Scripts.Managers
         {
             if (HasActiveUnit())
             {
-                _activeUnit.ToggleUnitSelectedState(false);
+                ActiveUnit.ToggleUnitSelectedState(false);
             }
 
-            _activeUnit = unit;
-            _activeUnit.ToggleUnitSelectedState(true);
+            ActiveUnit = unit;
+            ActiveUnit.ToggleUnitSelectedState(true);
 
             _uiViewHandle.ToggleActionBarState(true);
-            _uiViewHandle.InitializeUnitActions(_activeUnit);
+            _uiViewHandle.InitializeUnitActions(ActiveUnit);
         }
 
         private void HandleClickOnGround(Vector2 inputPosition)
         {
-            if (!HasActiveUnit() || !IsHumanoidUnit(_activeUnit)) return;
+            if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
+            //NOTE: (PT.12 - 76) display different effect on clicked
             _uiViewHandle.DisplayClickEffect(inputPosition);
-            _activeUnit.MoveTo(inputPosition);
+            ActiveUnit.MoveTo(inputPosition);
         }
 
         private void StartBuildingProgress()
         {
-            if (!HasEnoughResources())
-            {
-                Debug.Log("Not Enough Resources");
-                return;
-            }
+            if (!CanStartBuild(out var placementPosition)) return;
 
-            if (!_placementProcess.TryFinalizePlacement(out var placementPosition))
-            {
-                Debug.Log("Placement Incorrect");
-                return;
-            }
-
-            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return;
+            _buildingProcess = new BuildingProcess(_currentBuildActionSO,
+                placementPosition,
+                ActiveUnit as WorkerUnit,
+                _constructionEffect);
 
             ExecuteCallback();
-            Debug.Log($"Start build at: {placementPosition}");
         }
 
-        private bool HasEnoughResources()
+        private bool CanStartBuild(out Vector3 placementPosition)
         {
-            return _resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources);
+            if (!_resourceService.HasEnoughAllResources(_currentBuildActionSO.RequiredResources))
+            {
+                Debug.Log("Not Enough Resources");
+                placementPosition = default;
+                return false;
+            }
+
+            if (!_placementProcess.TryFinalizePlacement(out placementPosition))
+            {
+                Debug.Log("Placement Incorrect");
+                return false;
+            }
+
+            if (!_resourceService.TryConsume(_currentBuildActionSO.RequiredResources)) return false;
+
+            return true;
         }
 
         private void CancelBuildPlacement()
@@ -188,7 +215,6 @@ namespace HVO.Scripts.Managers
             _placementProcess.ClearPendingPlacement();
 
             ExecuteCallback();
-            Debug.Log("Cancel placement");
         }
 
         private void ExecuteCallback()

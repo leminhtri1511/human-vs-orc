@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6dbc3f086aa4f194291db8121252e66e
+guid: b8a994ab5121cb240925141aaa705d64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1164405640202335315
-    second: Tower_Construction_0
+      213: 2745466220734971758
+    second: BG 4b_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -122,30 +122,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tower_Construction_0
+      name: BG 4b_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 23
-        width: 104
-        height: 86
+        x: 0
+        y: 162
+        width: 512
+        height: 705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dab47415d3337dfe0800000000000000
-      internalID: -1164405640202335315
+      spriteID: e6ffdbd4bfad91620800000000000000
+      internalID: 2745466220734971758
       vertices: []
       indices: 
       edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tower_Construction_0: -1164405640202335315
+      BG 4b_0: 2745466220734971758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

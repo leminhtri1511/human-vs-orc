@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace HVO.Scripts.Utils
+namespace HVO.Scripts.Common
 {
     public static class FormatNumber
     {

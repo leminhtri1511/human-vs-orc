@@ -1,0 +1,4266 @@
+fileFormatVersion: 2
+guid: 1283a8574113af74daef018f6db17cbb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5920857175071359561
+    second: Free Smoke Fx  Pixel 05_0
+  - first:
+      213: 1995355973468897068
+    second: Free Smoke Fx  Pixel 05_1
+  - first:
+      213: -6900491720499478986
+    second: Free Smoke Fx  Pixel 05_2
+  - first:
+      213: 5038799887763644306
+    second: Free Smoke Fx  Pixel 05_3
+  - first:
+      213: 6797708382031505195
+    second: Free Smoke Fx  Pixel 05_4
+  - first:
+      213: -2407914838633860017
+    second: Free Smoke Fx  Pixel 05_5
+  - first:
+      213: 1161709636985009003
+    second: Free Smoke Fx  Pixel 05_6
+  - first:
+      213: 5996315924472140161
+    second: Free Smoke Fx  Pixel 05_7
+  - first:
+      213: -4878950373381602857
+    second: Free Smoke Fx  Pixel 05_8
+  - first:
+      213: 7884571719093412774
+    second: Free Smoke Fx  Pixel 05_9
+  - first:
+      213: -4671488125830581659
+    second: Free Smoke Fx  Pixel 05_10
+  - first:
+      213: 5266620330953572542
+    second: Free Smoke Fx  Pixel 05_11
+  - first:
+      213: -5934572846562839999
+    second: Free Smoke Fx  Pixel 05_12
+  - first:
+      213: 3211187192394458056
+    second: Free Smoke Fx  Pixel 05_13
+  - first:
+      213: -5718724987929153970
+    second: Free Smoke Fx  Pixel 05_14
+  - first:
+      213: -5820197312326408165
+    second: Free Smoke Fx  Pixel 05_15
+  - first:
+      213: -7480158401293608367
+    second: Free Smoke Fx  Pixel 05_16
+  - first:
+      213: -804198185636698393
+    second: Free Smoke Fx  Pixel 05_17
+  - first:
+      213: 6282600321061600203
+    second: Free Smoke Fx  Pixel 05_18
+  - first:
+      213: 4483961294845318021
+    second: Free Smoke Fx  Pixel 05_19
+  - first:
+      213: 4788088697305932207
+    second: Free Smoke Fx  Pixel 05_20
+  - first:
+      213: -2781965010535520500
+    second: Free Smoke Fx  Pixel 05_21
+  - first:
+      213: -561239934757495160
+    second: Free Smoke Fx  Pixel 05_22
+  - first:
+      213: -1858067172230613872
+    second: Free Smoke Fx  Pixel 05_23
+  - first:
+      213: 6735579407233199603
+    second: Free Smoke Fx  Pixel 05_24
+  - first:
+      213: -8868886538907481265
+    second: Free Smoke Fx  Pixel 05_25
+  - first:
+      213: -7674481278883663627
+    second: Free Smoke Fx  Pixel 05_26
+  - first:
+      213: 2119106202508350399
+    second: Free Smoke Fx  Pixel 05_27
+  - first:
+      213: 3165051673269300888
+    second: Free Smoke Fx  Pixel 05_28
+  - first:
+      213: -4994161225629109012
+    second: Free Smoke Fx  Pixel 05_29
+  - first:
+      213: 8898876368281595956
+    second: Free Smoke Fx  Pixel 05_30
+  - first:
+      213: 896792963217186937
+    second: Free Smoke Fx  Pixel 05_31
+  - first:
+      213: -3952514167635298845
+    second: Free Smoke Fx  Pixel 05_32
+  - first:
+      213: -5123024990214486039
+    second: Free Smoke Fx  Pixel 05_33
+  - first:
+      213: 1077482649826843336
+    second: Free Smoke Fx  Pixel 05_34
+  - first:
+      213: 7578219458663258629
+    second: Free Smoke Fx  Pixel 05_35
+  - first:
+      213: -2880630532136781086
+    second: Free Smoke Fx  Pixel 05_36
+  - first:
+      213: 1482971252388119113
+    second: Free Smoke Fx  Pixel 05_37
+  - first:
+      213: 1668724413619433489
+    second: Free Smoke Fx  Pixel 05_38
+  - first:
+      213: -2169636881062917453
+    second: Free Smoke Fx  Pixel 05_39
+  - first:
+      213: 8237796789791316793
+    second: Free Smoke Fx  Pixel 05_40
+  - first:
+      213: -6282888638587456640
+    second: Free Smoke Fx  Pixel 05_41
+  - first:
+      213: 1235095554502702217
+    second: Free Smoke Fx  Pixel 05_42
+  - first:
+      213: -1994328155128827467
+    second: Free Smoke Fx  Pixel 05_43
+  - first:
+      213: -1560944469365923394
+    second: Free Smoke Fx  Pixel 05_44
+  - first:
+      213: -6117533171886494046
+    second: Free Smoke Fx  Pixel 05_45
+  - first:
+      213: -5495556308067729839
+    second: Free Smoke Fx  Pixel 05_46
+  - first:
+      213: 3517145245766607960
+    second: Free Smoke Fx  Pixel 05_47
+  - first:
+      213: 9050170267957937358
+    second: Free Smoke Fx  Pixel 05_48
+  - first:
+      213: -6518629957820755290
+    second: Free Smoke Fx  Pixel 05_49
+  - first:
+      213: -4437383032487535367
+    second: Free Smoke Fx  Pixel 05_50
+  - first:
+      213: 3267716655830283448
+    second: Free Smoke Fx  Pixel 05_51
+  - first:
+      213: 4012710719601537426
+    second: Free Smoke Fx  Pixel 05_52
+  - first:
+      213: 2338323594166164931
+    second: Free Smoke Fx  Pixel 05_53
+  - first:
+      213: 1217234330186323417
+    second: Free Smoke Fx  Pixel 05_54
+  - first:
+      213: 8289331359961904573
+    second: Free Smoke Fx  Pixel 05_55
+  - first:
+      213: -4842723676598932872
+    second: Free Smoke Fx  Pixel 05_56
+  - first:
+      213: -5658594116167878217
+    second: Free Smoke Fx  Pixel 05_57
+  - first:
+      213: -7160560509941427431
+    second: Free Smoke Fx  Pixel 05_58
+  - first:
+      213: -1304029473280420002
+    second: Free Smoke Fx  Pixel 05_59
+  - first:
+      213: -5932849640101310186
+    second: Free Smoke Fx  Pixel 05_60
+  - first:
+      213: 5118510462340029463
+    second: Free Smoke Fx  Pixel 05_61
+  - first:
+      213: -1122780223568781631
+    second: Free Smoke Fx  Pixel 05_62
+  - first:
+      213: 1005611894633445320
+    second: Free Smoke Fx  Pixel 05_63
+  - first:
+      213: -6122583959998452933
+    second: Free Smoke Fx  Pixel 05_64
+  - first:
+      213: 6184054407311557156
+    second: Free Smoke Fx  Pixel 05_65
+  - first:
+      213: -797051372403167638
+    second: Free Smoke Fx  Pixel 05_66
+  - first:
+      213: 6729864819546980681
+    second: Free Smoke Fx  Pixel 05_67
+  - first:
+      213: 7503755212950706255
+    second: Free Smoke Fx  Pixel 05_68
+  - first:
+      213: -8711746096422793782
+    second: Free Smoke Fx  Pixel 05_69
+  - first:
+      213: 4894656225802641041
+    second: Free Smoke Fx  Pixel 05_70
+  - first:
+      213: -8558782151812361893
+    second: Free Smoke Fx  Pixel 05_71
+  - first:
+      213: 2153052888523531850
+    second: Free Smoke Fx  Pixel 05_72
+  - first:
+      213: 8051080675388653171
+    second: Free Smoke Fx  Pixel 05_73
+  - first:
+      213: -7201346905300169779
+    second: Free Smoke Fx  Pixel 05_74
+  - first:
+      213: -8147634713990525942
+    second: Free Smoke Fx  Pixel 05_75
+  - first:
+      213: 7557753617979472739
+    second: Free Smoke Fx  Pixel 05_76
+  - first:
+      213: -5591438818962605751
+    second: Free Smoke Fx  Pixel 05_77
+  - first:
+      213: 1361587065424812828
+    second: Free Smoke Fx  Pixel 05_78
+  - first:
+      213: -4186140786458650800
+    second: Free Smoke Fx  Pixel 05_79
+  - first:
+      213: 4651236799137572803
+    second: Free Smoke Fx  Pixel 05_80
+  - first:
+      213: -4432777294702321694
+    second: Free Smoke Fx  Pixel 05_81
+  - first:
+      213: 5284186705139906322
+    second: Free Smoke Fx  Pixel 05_82
+  - first:
+      213: 4300654258550398559
+    second: Free Smoke Fx  Pixel 05_83
+  - first:
+      213: 4619327350190382161
+    second: Free Smoke Fx  Pixel 05_84
+  - first:
+      213: -8286910959579920181
+    second: Free Smoke Fx  Pixel 05_85
+  - first:
+      213: 4202089370546325552
+    second: Free Smoke Fx  Pixel 05_86
+  - first:
+      213: 3918318594990507271
+    second: Free Smoke Fx  Pixel 05_87
+  - first:
+      213: 3498769112190832769
+    second: Free Smoke Fx  Pixel 05_88
+  - first:
+      213: -6052944657591142094
+    second: Free Smoke Fx  Pixel 05_89
+  - first:
+      213: -56212101367575865
+    second: Free Smoke Fx  Pixel 05_90
+  - first:
+      213: -4979153041403406168
+    second: Free Smoke Fx  Pixel 05_91
+  - first:
+      213: -4293832011970008987
+    second: Free Smoke Fx  Pixel 05_92
+  - first:
+      213: -7706267412664329345
+    second: Free Smoke Fx  Pixel 05_93
+  - first:
+      213: -331911424368856546
+    second: Free Smoke Fx  Pixel 05_94
+  - first:
+      213: 6222237549476312142
+    second: Free Smoke Fx  Pixel 05_95
+  - first:
+      213: -6322241656969483157
+    second: Free Smoke Fx  Pixel 05_96
+  - first:
+      213: -2469722970619057917
+    second: Free Smoke Fx  Pixel 05_97
+  - first:
+      213: -8551701825748346076
+    second: Free Smoke Fx  Pixel 05_98
+  - first:
+      213: 3596357946038167713
+    second: Free Smoke Fx  Pixel 05_99
+  - first:
+      213: 497020927626639774
+    second: Free Smoke Fx  Pixel 05_100
+  - first:
+      213: 8359197249225859400
+    second: Free Smoke Fx  Pixel 05_101
+  - first:
+      213: 5395220473409513924
+    second: Free Smoke Fx  Pixel 05_102
+  - first:
+      213: -8648603507131320844
+    second: Free Smoke Fx  Pixel 05_103
+  - first:
+      213: 7381932161860449994
+    second: Free Smoke Fx  Pixel 05_104
+  - first:
+      213: 9118389700353235812
+    second: Free Smoke Fx  Pixel 05_105
+  - first:
+      213: 8353593841870630776
+    second: Free Smoke Fx  Pixel 05_106
+  - first:
+      213: -839554937338954464
+    second: Free Smoke Fx  Pixel 05_107
+  - first:
+      213: -4373641780752898297
+    second: Free Smoke Fx  Pixel 05_108
+  - first:
+      213: 8674862027954820953
+    second: Free Smoke Fx  Pixel 05_109
+  - first:
+      213: -904575301127592927
+    second: Free Smoke Fx  Pixel 05_110
+  - first:
+      213: -1347355948362267171
+    second: Free Smoke Fx  Pixel 05_111
+  - first:
+      213: 999323225766656365
+    second: Free Smoke Fx  Pixel 05_112
+  - first:
+      213: 2477392910822887775
+    second: Free Smoke Fx  Pixel 05_113
+  - first:
+      213: -4304166061535452013
+    second: Free Smoke Fx  Pixel 05_114
+  - first:
+      213: -2024619544685861700
+    second: Free Smoke Fx  Pixel 05_115
+  - first:
+      213: 6849377306834089200
+    second: Free Smoke Fx  Pixel 05_116
+  - first:
+      213: 4395549759790362993
+    second: Free Smoke Fx  Pixel 05_117
+  - first:
+      213: 5861273971698280014
+    second: Free Smoke Fx  Pixel 05_118
+  - first:
+      213: 211247087650722625
+    second: Free Smoke Fx  Pixel 05_119
+  - first:
+      213: 657177896115406145
+    second: Free Smoke Fx  Pixel 05_120
+  - first:
+      213: 4669408291685912946
+    second: Free Smoke Fx  Pixel 05_121
+  - first:
+      213: 3312065240952293814
+    second: Free Smoke Fx  Pixel 05_122
+  - first:
+      213: -1593726641145188347
+    second: Free Smoke Fx  Pixel 05_123
+  - first:
+      213: -8189071107131236131
+    second: Free Smoke Fx  Pixel 05_124
+  - first:
+      213: -8884104983632640271
+    second: Free Smoke Fx  Pixel 05_125
+  - first:
+      213: -3102062465029130540
+    second: Free Smoke Fx  Pixel 05_126
+  - first:
+      213: -4365750781893533823
+    second: Free Smoke Fx  Pixel 05_127
+  - first:
+      213: 2516418767034069883
+    second: Free Smoke Fx  Pixel 05_128
+  - first:
+      213: -247519235764752575
+    second: Free Smoke Fx  Pixel 05_129
+  - first:
+      213: 9027153603988234628
+    second: Free Smoke Fx  Pixel 05_130
+  - first:
+      213: -2800691432717101614
+    second: Free Smoke Fx  Pixel 05_131
+  - first:
+      213: 8277048058128185057
+    second: Free Smoke Fx  Pixel 05_132
+  - first:
+      213: 2486209610653987539
+    second: Free Smoke Fx  Pixel 05_133
+  - first:
+      213: 5385761500343417108
+    second: Free Smoke Fx  Pixel 05_134
+  - first:
+      213: -232288507080243481
+    second: Free Smoke Fx  Pixel 05_135
+  - first:
+      213: -7233952470988801677
+    second: Free Smoke Fx  Pixel 05_136
+  - first:
+      213: -2498061624657540271
+    second: Free Smoke Fx  Pixel 05_137
+  - first:
+      213: -5520323916887021834
+    second: Free Smoke Fx  Pixel 05_138
+  - first:
+      213: -4814512859555947243
+    second: Free Smoke Fx  Pixel 05_139
+  - first:
+      213: -187512321054235860
+    second: Free Smoke Fx  Pixel 05_140
+  - first:
+      213: -5838775315717967960
+    second: Free Smoke Fx  Pixel 05_141
+  - first:
+      213: 8793251805421422175
+    second: Free Smoke Fx  Pixel 05_142
+  - first:
+      213: -2089297327572710589
+    second: Free Smoke Fx  Pixel 05_143
+  - first:
+      213: 9122200608430792050
+    second: Free Smoke Fx  Pixel 05_144
+  - first:
+      213: -5494389304264769586
+    second: Free Smoke Fx  Pixel 05_145
+  - first:
+      213: -7723209570689972885
+    second: Free Smoke Fx  Pixel 05_146
+  - first:
+      213: 286377836499518048
+    second: Free Smoke Fx  Pixel 05_147
+  - first:
+      213: -1216667553950604947
+    second: Free Smoke Fx  Pixel 05_148
+  - first:
+      213: -3805053285361533819
+    second: Free Smoke Fx  Pixel 05_149
+  - first:
+      213: 11576309986043099
+    second: Free Smoke Fx  Pixel 05_150
+  - first:
+      213: -4122805735299254781
+    second: Free Smoke Fx  Pixel 05_151
+  - first:
+      213: -15669754363518701
+    second: Free Smoke Fx  Pixel 05_152
+  - first:
+      213: 3213357223539702558
+    second: Free Smoke Fx  Pixel 05_153
+  - first:
+      213: -4400197198791788986
+    second: Free Smoke Fx  Pixel 05_154
+  - first:
+      213: -8421038726005358335
+    second: Free Smoke Fx  Pixel 05_155
+  - first:
+      213: 813731740564554256
+    second: Free Smoke Fx  Pixel 05_156
+  - first:
+      213: 885018962976678232
+    second: Free Smoke Fx  Pixel 05_157
+  - first:
+      213: 7693231503993078410
+    second: Free Smoke Fx  Pixel 05_158
+  - first:
+      213: -342800345664308143
+    second: Free Smoke Fx  Pixel 05_159
+  - first:
+      213: -1765908677321161317
+    second: Free Smoke Fx  Pixel 05_160
+  - first:
+      213: 8343537792110173900
+    second: Free Smoke Fx  Pixel 05_161
+  - first:
+      213: 7212564882588574123
+    second: Free Smoke Fx  Pixel 05_162
+  - first:
+      213: -1396244501610446437
+    second: Free Smoke Fx  Pixel 05_163
+  - first:
+      213: -8836145102014628735
+    second: Free Smoke Fx  Pixel 05_164
+  - first:
+      213: 8140735181712668283
+    second: Free Smoke Fx  Pixel 05_165
+  - first:
+      213: -6861678511596972651
+    second: Free Smoke Fx  Pixel 05_166
+  - first:
+      213: 1018784431350355619
+    second: Free Smoke Fx  Pixel 05_167
+  - first:
+      213: -3858956975257770414
+    second: Free Smoke Fx  Pixel 05_168
+  - first:
+      213: 6452075128929690198
+    second: Free Smoke Fx  Pixel 05_169
+  - first:
+      213: 2346409479988790596
+    second: Free Smoke Fx  Pixel 05_170
+  - first:
+      213: 355380130588308506
+    second: Free Smoke Fx  Pixel 05_171
+  - first:
+      213: 521524896917428010
+    second: Free Smoke Fx  Pixel 05_172
+  - first:
+      213: -2806860142364625155
+    second: Free Smoke Fx  Pixel 05_173
+  - first:
+      213: 2240135125741999997
+    second: Free Smoke Fx  Pixel 05_174
+  - first:
+      213: -2907195120651892931
+    second: Free Smoke Fx  Pixel 05_175
+  - first:
+      213: -3145037715632001716
+    second: Free Smoke Fx  Pixel 05_176
+  - first:
+      213: -8021584192451085844
+    second: Free Smoke Fx  Pixel 05_177
+  - first:
+      213: -8448248696422115913
+    second: Free Smoke Fx  Pixel 05_178
+  - first:
+      213: 7172619106001197139
+    second: Free Smoke Fx  Pixel 05_179
+  - first:
+      213: 1142793727566628623
+    second: Free Smoke Fx  Pixel 05_180
+  - first:
+      213: -201450506744279079
+    second: Free Smoke Fx  Pixel 05_181
+  - first:
+      213: 8198226801433832160
+    second: Free Smoke Fx  Pixel 05_182
+  - first:
+      213: 7635420523134384694
+    second: Free Smoke Fx  Pixel 05_183
+  - first:
+      213: 5133988091491358808
+    second: Free Smoke Fx  Pixel 05_184
+  - first:
+      213: -8292712907492694131
+    second: Free Smoke Fx  Pixel 05_185
+  - first:
+      213: 462810536583027353
+    second: Free Smoke Fx  Pixel 05_186
+  - first:
+      213: -5012922343634690185
+    second: Free Smoke Fx  Pixel 05_187
+  - first:
+      213: -4918479490740834097
+    second: Free Smoke Fx  Pixel 05_188
+  - first:
+      213: 7160308198595567767
+    second: Free Smoke Fx  Pixel 05_189
+  - first:
+      213: -1884931513231462749
+    second: Free Smoke Fx  Pixel 05_190
+  - first:
+      213: -5888594441375204758
+    second: Free Smoke Fx  Pixel 05_191
+  - first:
+      213: 2400073448781649629
+    second: Free Smoke Fx  Pixel 05_192
+  - first:
+      213: 7221569323977771870
+    second: Free Smoke Fx  Pixel 05_193
+  - first:
+      213: 1882335744156133776
+    second: Free Smoke Fx  Pixel 05_194
+  - first:
+      213: -7502450356811060556
+    second: Free Smoke Fx  Pixel 05_195
+  - first:
+      213: -4351436913807624308
+    second: Free Smoke Fx  Pixel 05_196
+  - first:
+      213: 6358357120235874680
+    second: Free Smoke Fx  Pixel 05_197
+  - first:
+      213: 6214386160246262215
+    second: Free Smoke Fx  Pixel 05_198
+  - first:
+      213: -8545449521272371011
+    second: Free Smoke Fx  Pixel 05_199
+  - first:
+      213: 6425275259906518689
+    second: Free Smoke Fx  Pixel 05_200
+  - first:
+      213: -8656222529027797450
+    second: Free Smoke Fx  Pixel 05_201
+  - first:
+      213: 5911442826873539729
+    second: Free Smoke Fx  Pixel 05_202
+  - first:
+      213: -2616860825661685712
+    second: Free Smoke Fx  Pixel 05_203
+  - first:
+      213: 8268942872718162459
+    second: Free Smoke Fx  Pixel 05_204
+  - first:
+      213: 7307033232975529333
+    second: Free Smoke Fx  Pixel 05_205
+  - first:
+      213: 4635338390300216948
+    second: Free Smoke Fx  Pixel 05_206
+  - first:
+      213: 3251015690744989180
+    second: Free Smoke Fx  Pixel 05_207
+  - first:
+      213: -389271866624589318
+    second: Free Smoke Fx  Pixel 05_208
+  - first:
+      213: 8588750094345481497
+    second: Free Smoke Fx  Pixel 05_209
+  - first:
+      213: 1975267681895377814
+    second: Free Smoke Fx  Pixel 05_210
+  - first:
+      213: 1602623826582949052
+    second: Free Smoke Fx  Pixel 05_211
+  - first:
+      213: -7542528502145363695
+    second: Free Smoke Fx  Pixel 05_212
+  - first:
+      213: 8082237919780989340
+    second: Free Smoke Fx  Pixel 05_213
+  - first:
+      213: 5485920993548704479
+    second: Free Smoke Fx  Pixel 05_214
+  - first:
+      213: 3411786478028035786
+    second: Free Smoke Fx  Pixel 05_215
+  - first:
+      213: 261086477375328775
+    second: Free Smoke Fx  Pixel 05_216
+  - first:
+      213: 8446254395085295681
+    second: Free Smoke Fx  Pixel 05_217
+  - first:
+      213: 1028071022321262225
+    second: Free Smoke Fx  Pixel 05_218
+  - first:
+      213: 8700374134275700015
+    second: Free Smoke Fx  Pixel 05_219
+  - first:
+      213: -1568146298638439317
+    second: Free Smoke Fx  Pixel 05_220
+  - first:
+      213: 4483855821801444889
+    second: Free Smoke Fx  Pixel 05_221
+  - first:
+      213: -477239092344211218
+    second: Free Smoke Fx  Pixel 05_222
+  - first:
+      213: -3404736579988869681
+    second: Free Smoke Fx  Pixel 05_223
+  - first:
+      213: -8173723507459900637
+    second: Free Smoke Fx  Pixel 05_224
+  - first:
+      213: -8017007969846505753
+    second: Free Smoke Fx  Pixel 05_225
+  - first:
+      213: 183968404837796577
+    second: Free Smoke Fx  Pixel 05_226
+  - first:
+      213: -3556621812814176391
+    second: Free Smoke Fx  Pixel 05_227
+  - first:
+      213: -1022421219946463799
+    second: Free Smoke Fx  Pixel 05_228
+  - first:
+      213: -3003710372393283641
+    second: Free Smoke Fx  Pixel 05_229
+  - first:
+      213: -4878349082316957133
+    second: Free Smoke Fx  Pixel 05_230
+  - first:
+      213: -8093399896993739402
+    second: Free Smoke Fx  Pixel 05_231
+  - first:
+      213: 9001904424837546388
+    second: Free Smoke Fx  Pixel 05_232
+  - first:
+      213: -928230364268779587
+    second: Free Smoke Fx  Pixel 05_233
+  - first:
+      213: -3361215142524603660
+    second: Free Smoke Fx  Pixel 05_234
+  - first:
+      213: 8605924952897470341
+    second: Free Smoke Fx  Pixel 05_235
+  - first:
+      213: -7810084446874403229
+    second: Free Smoke Fx  Pixel 05_236
+  - first:
+      213: 4583537007413259901
+    second: Free Smoke Fx  Pixel 05_237
+  - first:
+      213: 7790581852343824276
+    second: Free Smoke Fx  Pixel 05_238
+  - first:
+      213: -436052648457294271
+    second: Free Smoke Fx  Pixel 05_239
+  - first:
+      213: 5796627315819626087
+    second: Free Smoke Fx  Pixel 05_240
+  - first:
+      213: 9102042445845766438
+    second: Free Smoke Fx  Pixel 05_241
+  - first:
+      213: -6745523580995388848
+    second: Free Smoke Fx  Pixel 05_242
+  - first:
+      213: -2491101007035389844
+    second: Free Smoke Fx  Pixel 05_243
+  - first:
+      213: 2383029365328161136
+    second: Free Smoke Fx  Pixel 05_244
+  - first:
+      213: 5783915887501185981
+    second: Free Smoke Fx  Pixel 05_245
+  - first:
+      213: -6657857879328440146
+    second: Free Smoke Fx  Pixel 05_246
+  - first:
+      213: 6429396999258516131
+    second: Free Smoke Fx  Pixel 05_247
+  - first:
+      213: 3767442871060976685
+    second: Free Smoke Fx  Pixel 05_248
+  - first:
+      213: 8964696911757661944
+    second: Free Smoke Fx  Pixel 05_249
+  - first:
+      213: -3241685677869965225
+    second: Free Smoke Fx  Pixel 05_250
+  - first:
+      213: 5977915102499115112
+    second: Free Smoke Fx  Pixel 05_251
+  - first:
+      213: -2861599151326266942
+    second: Free Smoke Fx  Pixel 05_252
+  - first:
+      213: 7019115962363850528
+    second: Free Smoke Fx  Pixel 05_253
+  - first:
+      213: 6601090780753585929
+    second: Free Smoke Fx  Pixel 05_254
+  - first:
+      213: 9166223454582818486
+    second: Free Smoke Fx  Pixel 05_255
+  - first:
+      213: -2683568639372921675
+    second: Free Smoke Fx  Pixel 05_256
+  - first:
+      213: -2851892120552896830
+    second: Free Smoke Fx  Pixel 05_257
+  - first:
+      213: 7140246068447876428
+    second: Free Smoke Fx  Pixel 05_258
+  - first:
+      213: 478473441587137605
+    second: Free Smoke Fx  Pixel 05_259
+  - first:
+      213: 1483315018929431071
+    second: Free Smoke Fx  Pixel 05_260
+  - first:
+      213: -2320987051156693132
+    second: Free Smoke Fx  Pixel 05_261
+  - first:
+      213: 68232442202548546
+    second: Free Smoke Fx  Pixel 05_262
+  - first:
+      213: 530847864204697116
+    second: Free Smoke Fx  Pixel 05_263
+  - first:
+      213: 5579854743777049597
+    second: Free Smoke Fx  Pixel 05_264
+  - first:
+      213: -4172382744356533265
+    second: Free Smoke Fx  Pixel 05_265
+  - first:
+      213: -5652973519786543915
+    second: Free Smoke Fx  Pixel 05_266
+  - first:
+      213: -7703646392429235428
+    second: Free Smoke Fx  Pixel 05_267
+  - first:
+      213: -5979745920104378453
+    second: Free Smoke Fx  Pixel 05_268
+  - first:
+      213: 2132212388641727662
+    second: Free Smoke Fx  Pixel 05_269
+  - first:
+      213: 3204489719819873185
+    second: Free Smoke Fx  Pixel 05_270
+  - first:
+      213: -6475035028605338384
+    second: Free Smoke Fx  Pixel 05_271
+  - first:
+      213: -6404184835968941477
+    second: Free Smoke Fx  Pixel 05_272
+  - first:
+      213: -7897584273613077618
+    second: Free Smoke Fx  Pixel 05_273
+  - first:
+      213: 5341500125054818646
+    second: Free Smoke Fx  Pixel 05_274
+  - first:
+      213: -6859909620119805842
+    second: Free Smoke Fx  Pixel 05_275
+  - first:
+      213: -6867445232465235606
+    second: Free Smoke Fx  Pixel 05_276
+  - first:
+      213: -4876752276673142270
+    second: Free Smoke Fx  Pixel 05_277
+  - first:
+      213: -4077388967939873527
+    second: Free Smoke Fx  Pixel 05_278
+  - first:
+      213: 325143747167513261
+    second: Free Smoke Fx  Pixel 05_279
+  - first:
+      213: -2509600200684183963
+    second: Free Smoke Fx  Pixel 05_280
+  - first:
+      213: -7186650068497592233
+    second: Free Smoke Fx  Pixel 05_281
+  - first:
+      213: 2681954050346708386
+    second: Free Smoke Fx  Pixel 05_282
+  - first:
+      213: -6551646391314694184
+    second: Free Smoke Fx  Pixel 05_283
+  - first:
+      213: -7586083334408012438
+    second: Free Smoke Fx  Pixel 05_284
+  - first:
+      213: 2827389136731517237
+    second: Free Smoke Fx  Pixel 05_285
+  - first:
+      213: -7185476851042804282
+    second: Free Smoke Fx  Pixel 05_286
+  - first:
+      213: -2690180162445868929
+    second: Free Smoke Fx  Pixel 05_287
+  - first:
+      213: -4954998150835838395
+    second: Free Smoke Fx  Pixel 05_288
+  - first:
+      213: -7268526779109990097
+    second: Free Smoke Fx  Pixel 05_289
+  - first:
+      213: -3223361850327071688
+    second: Free Smoke Fx  Pixel 05_290
+  - first:
+      213: 1324070967180925240
+    second: Free Smoke Fx  Pixel 05_291
+  - first:
+      213: -1376302448245645722
+    second: Free Smoke Fx  Pixel 05_292
+  - first:
+      213: 3218046028261982024
+    second: Free Smoke Fx  Pixel 05_293
+  - first:
+      213: -3174363422484797000
+    second: Free Smoke Fx  Pixel 05_294
+  - first:
+      213: -8324367257454212
+    second: Free Smoke Fx  Pixel 05_295
+  - first:
+      213: -7804138115292220249
+    second: Free Smoke Fx  Pixel 05_296
+  - first:
+      213: 45839016445478357
+    second: Free Smoke Fx  Pixel 05_297
+  - first:
+      213: -2275069392641677646
+    second: Free Smoke Fx  Pixel 05_298
+  - first:
+      213: 7870921614610879700
+    second: Free Smoke Fx  Pixel 05_299
+  - first:
+      213: 8716481014451291937
+    second: Free Smoke Fx  Pixel 05_300
+  - first:
+      213: -5404350471590318841
+    second: Free Smoke Fx  Pixel 05_301
+  - first:
+      213: 8886577385030107254
+    second: Free Smoke Fx  Pixel 05_302
+  - first:
+      213: -2491516591287610429
+    second: Free Smoke Fx  Pixel 05_303
+  - first:
+      213: 2787428219275356840
+    second: Free Smoke Fx  Pixel 05_304
+  - first:
+      213: 3083239365532332606
+    second: Free Smoke Fx  Pixel 05_305
+  - first:
+      213: -123787335966192528
+    second: Free Smoke Fx  Pixel 05_306
+  - first:
+      213: 850692159464634026
+    second: Free Smoke Fx  Pixel 05_307
+  - first:
+      213: -1838516418781504470
+    second: Free Smoke Fx  Pixel 05_308
+  - first:
+      213: -3247763016560776198
+    second: Free Smoke Fx  Pixel 05_309
+  - first:
+      213: 5921377286004185483
+    second: Free Smoke Fx  Pixel 05_310
+  - first:
+      213: -6053197159817135234
+    second: Free Smoke Fx  Pixel 05_311
+  - first:
+      213: 3587628003883802444
+    second: Free Smoke Fx  Pixel 05_312
+  - first:
+      213: -1106920064402572274
+    second: Free Smoke Fx  Pixel 05_313
+  - first:
+      213: -5714721494270203240
+    second: Free Smoke Fx  Pixel 05_314
+  - first:
+      213: 2146039802033030478
+    second: Free Smoke Fx  Pixel 05_315
+  - first:
+      213: -6726923621049452365
+    second: Free Smoke Fx  Pixel 05_316
+  - first:
+      213: 6382321592635159877
+    second: Free Smoke Fx  Pixel 05_317
+  - first:
+      213: -2373259874395445862
+    second: Free Smoke Fx  Pixel 05_318
+  - first:
+      213: 3086700106643039738
+    second: Free Smoke Fx  Pixel 05_319
+  - first:
+      213: -2733218971924798139
+    second: Free Smoke Fx  Pixel 05_320
+  - first:
+      213: -9031735939363191152
+    second: Free Smoke Fx  Pixel 05_321
+  - first:
+      213: -5856747210605109772
+    second: Free Smoke Fx  Pixel 05_322
+  - first:
+      213: 2156895688961392723
+    second: Free Smoke Fx  Pixel 05_323
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2123944426e6754288a5732fec4c158
+      internalID: 362083485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfebd0b3a5ade4479ecb90d45cf88c9
+      internalID: -1564819980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbf3dd61ae75984b933fffed785c32d
+      internalID: -45426635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00879a514a27984e832c9cd9280ad07
+      internalID: -1148498137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a702802550481340b8d5c94eaf08140
+      internalID: -966376871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83930f2cd6d30d489479d5eeb82da05
+      internalID: -266795066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7a5b4df7b0af14a85f71fb6d2c502d
+      internalID: -160604169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c613e1e68df1d094fb78fe52efa45bd8
+      internalID: -1700408175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538904f60309e4d4b9149e5271874ef7
+      internalID: 176944137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082f4219e4b2bb446ba4f6dce2160b57
+      internalID: 1414786286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80855fc1585e7c44ea5ff6a595e4d109
+      internalID: -193683678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f6dd6158a93084ca89a42e49514242
+      internalID: 1113121810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000ec420429a37940b3cbccc03293b72
+      internalID: 1285221412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ef71a069605ac4c89e2e6e8502ce8e
+      internalID: -1656998488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc27500fc0fd744d83cbe06d95cc3dc
+      internalID: 983731891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b78359cee370d448ffe53de359f739
+      internalID: 1789791369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d618625ef6d0df41908a1cb1c77d0f6
+      internalID: -1673685360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937a07aa291bfc947b22895df21266db
+      internalID: -1173494877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076e021d33edfae4f8f84883023aebab
+      internalID: 231592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e03bb3d6aa0747499144ee6eff4fec0
+      internalID: 459067215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16788aa7e5c7b324c84157583da6162c
+      internalID: -713390452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c344b60888b9b4cab157695c2509d0
+      internalID: 1120264246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9954c327663a767498a13bf73241eacb
+      internalID: -174222251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486b08df538e69a4ab4d00cfa1628dd8
+      internalID: -284581935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fee7722d9e94148a59c5f5190d260b
+      internalID: 966327612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673347f3060a3a74eaf569f8c6e6f1be
+      internalID: 906158052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2344421d9a8c52340951181508914c60
+      internalID: 406350571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_27
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8694c926dd85864c9afeddbea0b8d6b
+      internalID: -804104725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_28
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f2fc459ade26047aa88ab61e5b03c6
+      internalID: -85436573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9db5710d1bb2914ab80dba256048370
+      internalID: 221983493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331322dcf12ed2a4a8057744e2040c5b
+      internalID: 388245588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3830bd72a21c30c4998a4a69ac883b23
+      internalID: 1301954362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12e8cbc6597d7d4db8adececf78de84
+      internalID: 1102698293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3969f503d78bcd44d93461f4d7fddf00
+      internalID: -723267090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3c9b1ed0b85c042b923bd1a8490537
+      internalID: 1831936020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a114987b9b7984ca893d5b8e66d28d
+      internalID: -1001110976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbffc8dae10af7419e320c99ebd124f
+      internalID: 406656819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc9b5a5cfd91945be819d4fd5e3f4d
+      internalID: -2147246659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cd29ceb56ef8645b9d3e5d04d7f023
+      internalID: 175234416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be942e47ec1edaa4c9a44bfaa3f0c5d0
+      internalID: -978342457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1ddc4ce67265e41bfb6f2824eae0b2
+      internalID: -1206223121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f7ed94f5adb6348b39e862fcfc807a
+      internalID: 1098650994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d8ac012df7c7b45968c9aa6b731b87
+      internalID: -1093287812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481fc7678eb208842ab3ed15f17705c8
+      internalID: -1403544663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c9d86e2ddc9a41bcac1fb06764cdf
+      internalID: -2002265721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dc5d82a65514549807e7d6b37a3937
+      internalID: 1010580951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef83a40292dcc847889dcb191b84cf4
+      internalID: -118911287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_47
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c6477ac652d484fbd4a011c2803f56
+      internalID: 1495835529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42d391879ecbd8438d8bbfb393c5335
+      internalID: -394873300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc33756d592815429d0604f10fd775f
+      internalID: -1132728458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c29741db9a88741b1f56b4abf3be8e
+      internalID: -2040059995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad7668a0f0f3394f9c5d7649188a0de
+      internalID: -281183328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4c537e51ec64340968ba22df9b430f
+      internalID: -1878209175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c844dd5562fe094a9d24092e5ba1e3f
+      internalID: -1837129454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf0857a122106b45800603fbc52d85a
+      internalID: -1260787265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bbb7e1ea7738f4e9f5c77794d8ca1d
+      internalID: 2002947468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1113181c8f26b141b88cb07e6fd8734
+      internalID: 2073318356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed417dffe6bd514caf0cecc813019ae
+      internalID: -537956596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6d387879ed0214abdaf4a8b1f749a4
+      internalID: -1594509444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba24a0a8ae47934abd099b00ea41edf
+      internalID: -1423490712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eedf360ea7226b418dfed111dd20e0e
+      internalID: 156914059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_61
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091f4a42d9ac8964ea2c2b9f2e508a48
+      internalID: 1544320761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_62
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31efd313017653545b149c7119b31c07
+      internalID: 1759929383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170f1e0816ddfc048a78232f8cc354b4
+      internalID: 317904380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_64
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3442bc01ea408a7428ee5fa63461ba80
+      internalID: 1342262152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_65
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8964757ac5684ec4db8260227416e0de
+      internalID: -133993774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e19e15af2f27d448f37a07e2be4c8a
+      internalID: -519597625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cc6cb00ede2d54fa6af634cbcefef1
+      internalID: -479677840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23c802f06c130b47936e4241bfe8844
+      internalID: -2134406620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d52e443767ffe54095ffbbdf9aba65d
+      internalID: -1867185633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13b24b7194589a4a91567fa5e68d80a
+      internalID: 1836999356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde9fa3c2078bb14a809475e6b41b272
+      internalID: -1734692195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8535db22e0ff641b2c9b4c8639ceb2
+      internalID: 2116173975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a3b4ad539d2f9428d7e6dea5b07e96
+      internalID: 1869874571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_74
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea783c76087d22f4790c3089cca711ce
+      internalID: 1727935865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45044b35465a30b49a589414a80efdc9
+      internalID: 925565567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbd7de53e82e324f9f22df437abe82f
+      internalID: 1507549805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602b07f73e795c941b2e2cdaad29a08a
+      internalID: 249866306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f89a2bfee896448ad0010b5be0cbd1
+      internalID: 1184355021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b488e1f1b1f3964091f7f9d68ebfd1f
+      internalID: 480278279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_80
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aa86746badd0b49a13bdeb31ce99c6
+      internalID: 65791536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_81
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850115d69a5449e4f938aa47558d1500
+      internalID: 1875949519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_82
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a17206cdde642409cfd72d3f75db0b
+      internalID: -1939242882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_83
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135138c709248544d91bbbcf5b8ebd75
+      internalID: 1310556977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c25ba805b9256b4a80bcdb983df5699
+      internalID: 189844975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fa8961482199e4da745f46cf219356
+      internalID: -1685820926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f4a96a56a163f42b61953b53637739
+      internalID: 1200306373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_87
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b54abf93bc3b544bb12a783d0f2628
+      internalID: -642482855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb828e5bc08fefd41be1d971f0598fcd
+      internalID: 520141589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_89
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b72a013bca2b9543b9b0a41557230a6
+      internalID: 169914876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_90
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4d85bba852e1243923c32ad9636c4d
+      internalID: -2079584610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_91
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfe996415eb23c4fb3b46d74d04460b
+      internalID: 1406213351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e244cab77ae01b4ab23d180323be14f
+      internalID: -966620125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec12cf1bc198144b7f45e983eb863e
+      internalID: -466068325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516b586d5d356044083953066674c374
+      internalID: -1138278398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_95
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b82bb7739ec794e987dd80239d8f16
+      internalID: 1121519724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa6f58f64cb7e64f96d7c5b084309a4
+      internalID: -47996930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f84dd14f51ba74429f263ac8f70b426
+      internalID: -1226413043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_98
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4bfcf3902594d44949d2eb63993afe
+      internalID: 1929662108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08f8460a0b5488428764549e64db504
+      internalID: -2024476279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_100
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baa4ae3e1bd69c4b8561d51b89c8630
+      internalID: 973246280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_101
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eeb0623283ef444bf2c5a6f0adec0a
+      internalID: 1946919645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3708180eb92d345bfe0861d0ef6999
+      internalID: 295818993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913034260d2747749be1b1b3b20a2ede
+      internalID: -747305181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451981b4f242f97478cfa5d5c5019868
+      internalID: -1344386796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801988f04c1d754c84dc0cb41ef1284
+      internalID: 1323570888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_106
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283ce39c5dd897469ad302590217dc4
+      internalID: 827729911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_107
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72493807e1d4df247bf8032ecfa31f13
+      internalID: 1513119458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a90f4d122f19ea41a046c82d10fdf58
+      internalID: 1398693833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_109
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff76c03922d52642adf6ede20a348af
+      internalID: -1911955025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_110
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ed284f7de80e64087060a753f10f8f
+      internalID: 1865258851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35e56d5aab2b5a4cacd32bd14224227
+      internalID: -348640847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f29e5e6ee49ef44bcea59e93200a99
+      internalID: -1670221172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_113
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9fbfaea468f49458fb46aa23205bf8
+      internalID: -749702774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d9f12714f95e4a9ec58c1845f6af4
+      internalID: 1703234412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_115
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1578b40c39212e64ba8b36681de62434
+      internalID: 358654248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12638f6f12ef644d86a5484d7fe27b3
+      internalID: 778823968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_117
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106fc72323842a54cb931d8505c91fa3
+      internalID: 587596691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_118
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55271844c07be24d85408801dcd7ee2
+      internalID: 898383610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_119
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e6212f80f6e4046902e379bd9ffd82
+      internalID: 403774893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18edd9d83f0d1b04eaec3b2ab3556595
+      internalID: 1693362579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c5a62ab972dd64283d157202b951a3
+      internalID: -1030518881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fde48d4e39b864db387d657bc353b6
+      internalID: -2049315810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94107272883e114a976cfd540dbb1b6
+      internalID: -1586574440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3a6a8a30c159d46a928e4fe3aa9748
+      internalID: 1181930789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_125
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28f30743b5851245b89161e438f0b60
+      internalID: 1553862858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c82838eb0bb17f4f8eca1e82985a22b
+      internalID: -454564543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c714cd1b3dfec42a1c6bd22622e900
+      internalID: 1323532535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_128
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b38a1c5e7e1aca43b1c90411b7ed09c
+      internalID: 1938678886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc16664b240552344bcede15499b2e85
+      internalID: 2105186413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab9427b729bfc4409907f5f1ba6ceb1
+      internalID: -1159781768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_131
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01777a606d854f44aebd634424b27f8
+      internalID: 1788435810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1c4c102c789144a8a3e48ea40aa68a
+      internalID: 742061692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_133
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304c8f8a48ec656479f03e652e24953d
+      internalID: 31769458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_134
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ca5e890f2b92746863d167a4d4e31a
+      internalID: -197667513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_135
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71babbaa275f98341980aeb74c9d9585
+      internalID: -637608000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Smoke_Fx_Pixel_05_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c9f05fb63611c498f63e6558915572
+      internalID: -1485827738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d839ec1e8d793f24ba5af3e3282b75e6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Free_Smoke_Fx_Pixel_05_0: 362083485
+      Free_Smoke_Fx_Pixel_05_1: -1564819980
+      Free_Smoke_Fx_Pixel_05_10: -193683678
+      Free_Smoke_Fx_Pixel_05_100: 973246280
+      Free_Smoke_Fx_Pixel_05_101: 1946919645
+      Free_Smoke_Fx_Pixel_05_102: 295818993
+      Free_Smoke_Fx_Pixel_05_103: -747305181
+      Free_Smoke_Fx_Pixel_05_104: -1344386796
+      Free_Smoke_Fx_Pixel_05_105: 1323570888
+      Free_Smoke_Fx_Pixel_05_106: 827729911
+      Free_Smoke_Fx_Pixel_05_107: 1513119458
+      Free_Smoke_Fx_Pixel_05_108: 1398693833
+      Free_Smoke_Fx_Pixel_05_109: -1911955025
+      Free_Smoke_Fx_Pixel_05_11: 1113121810
+      Free_Smoke_Fx_Pixel_05_110: 1865258851
+      Free_Smoke_Fx_Pixel_05_111: -348640847
+      Free_Smoke_Fx_Pixel_05_112: -1670221172
+      Free_Smoke_Fx_Pixel_05_113: -749702774
+      Free_Smoke_Fx_Pixel_05_114: 1703234412
+      Free_Smoke_Fx_Pixel_05_115: 358654248
+      Free_Smoke_Fx_Pixel_05_116: 778823968
+      Free_Smoke_Fx_Pixel_05_117: 587596691
+      Free_Smoke_Fx_Pixel_05_118: 898383610
+      Free_Smoke_Fx_Pixel_05_119: 403774893
+      Free_Smoke_Fx_Pixel_05_12: 1285221412
+      Free_Smoke_Fx_Pixel_05_120: 1693362579
+      Free_Smoke_Fx_Pixel_05_121: -1030518881
+      Free_Smoke_Fx_Pixel_05_122: -2049315810
+      Free_Smoke_Fx_Pixel_05_123: -1586574440
+      Free_Smoke_Fx_Pixel_05_124: 1181930789
+      Free_Smoke_Fx_Pixel_05_125: 1553862858
+      Free_Smoke_Fx_Pixel_05_126: -454564543
+      Free_Smoke_Fx_Pixel_05_127: 1323532535
+      Free_Smoke_Fx_Pixel_05_128: 1938678886
+      Free_Smoke_Fx_Pixel_05_129: 2105186413
+      Free_Smoke_Fx_Pixel_05_13: -1656998488
+      Free_Smoke_Fx_Pixel_05_130: -1159781768
+      Free_Smoke_Fx_Pixel_05_131: 1788435810
+      Free_Smoke_Fx_Pixel_05_132: 742061692
+      Free_Smoke_Fx_Pixel_05_133: 31769458
+      Free_Smoke_Fx_Pixel_05_134: -197667513
+      Free_Smoke_Fx_Pixel_05_135: -637608000
+      Free_Smoke_Fx_Pixel_05_136: -1485827738
+      Free_Smoke_Fx_Pixel_05_14: 983731891
+      Free_Smoke_Fx_Pixel_05_15: 1789791369
+      Free_Smoke_Fx_Pixel_05_16: -1673685360
+      Free_Smoke_Fx_Pixel_05_17: -1173494877
+      Free_Smoke_Fx_Pixel_05_18: 231592
+      Free_Smoke_Fx_Pixel_05_19: 459067215
+      Free_Smoke_Fx_Pixel_05_2: -45426635
+      Free_Smoke_Fx_Pixel_05_20: -713390452
+      Free_Smoke_Fx_Pixel_05_21: 1120264246
+      Free_Smoke_Fx_Pixel_05_22: -174222251
+      Free_Smoke_Fx_Pixel_05_23: -284581935
+      Free_Smoke_Fx_Pixel_05_24: 966327612
+      Free_Smoke_Fx_Pixel_05_25: 906158052
+      Free_Smoke_Fx_Pixel_05_26: 406350571
+      Free_Smoke_Fx_Pixel_05_27: -804104725
+      Free_Smoke_Fx_Pixel_05_28: -85436573
+      Free_Smoke_Fx_Pixel_05_29: 221983493
+      Free_Smoke_Fx_Pixel_05_3: -1148498137
+      Free_Smoke_Fx_Pixel_05_30: 388245588
+      Free_Smoke_Fx_Pixel_05_31: 1301954362
+      Free_Smoke_Fx_Pixel_05_32: 1102698293
+      Free_Smoke_Fx_Pixel_05_33: -723267090
+      Free_Smoke_Fx_Pixel_05_34: 1831936020
+      Free_Smoke_Fx_Pixel_05_35: -1001110976
+      Free_Smoke_Fx_Pixel_05_36: 406656819
+      Free_Smoke_Fx_Pixel_05_37: -2147246659
+      Free_Smoke_Fx_Pixel_05_38: 175234416
+      Free_Smoke_Fx_Pixel_05_39: -978342457
+      Free_Smoke_Fx_Pixel_05_4: -966376871
+      Free_Smoke_Fx_Pixel_05_40: -1206223121
+      Free_Smoke_Fx_Pixel_05_41: 1098650994
+      Free_Smoke_Fx_Pixel_05_42: -1093287812
+      Free_Smoke_Fx_Pixel_05_43: -1403544663
+      Free_Smoke_Fx_Pixel_05_44: -2002265721
+      Free_Smoke_Fx_Pixel_05_45: 1010580951
+      Free_Smoke_Fx_Pixel_05_46: -118911287
+      Free_Smoke_Fx_Pixel_05_47: 1495835529
+      Free_Smoke_Fx_Pixel_05_48: -394873300
+      Free_Smoke_Fx_Pixel_05_49: -1132728458
+      Free_Smoke_Fx_Pixel_05_5: -266795066
+      Free_Smoke_Fx_Pixel_05_50: -2040059995
+      Free_Smoke_Fx_Pixel_05_51: -281183328
+      Free_Smoke_Fx_Pixel_05_52: -1878209175
+      Free_Smoke_Fx_Pixel_05_53: -1837129454
+      Free_Smoke_Fx_Pixel_05_54: -1260787265
+      Free_Smoke_Fx_Pixel_05_55: 2002947468
+      Free_Smoke_Fx_Pixel_05_56: 2073318356
+      Free_Smoke_Fx_Pixel_05_57: -537956596
+      Free_Smoke_Fx_Pixel_05_58: -1594509444
+      Free_Smoke_Fx_Pixel_05_59: -1423490712
+      Free_Smoke_Fx_Pixel_05_6: -160604169
+      Free_Smoke_Fx_Pixel_05_60: 156914059
+      Free_Smoke_Fx_Pixel_05_61: 1544320761
+      Free_Smoke_Fx_Pixel_05_62: 1759929383
+      Free_Smoke_Fx_Pixel_05_63: 317904380
+      Free_Smoke_Fx_Pixel_05_64: 1342262152
+      Free_Smoke_Fx_Pixel_05_65: -133993774
+      Free_Smoke_Fx_Pixel_05_66: -519597625
+      Free_Smoke_Fx_Pixel_05_67: -479677840
+      Free_Smoke_Fx_Pixel_05_68: -2134406620
+      Free_Smoke_Fx_Pixel_05_69: -1867185633
+      Free_Smoke_Fx_Pixel_05_7: -1700408175
+      Free_Smoke_Fx_Pixel_05_70: 1836999356
+      Free_Smoke_Fx_Pixel_05_71: -1734692195
+      Free_Smoke_Fx_Pixel_05_72: 2116173975
+      Free_Smoke_Fx_Pixel_05_73: 1869874571
+      Free_Smoke_Fx_Pixel_05_74: 1727935865
+      Free_Smoke_Fx_Pixel_05_75: 925565567
+      Free_Smoke_Fx_Pixel_05_76: 1507549805
+      Free_Smoke_Fx_Pixel_05_77: 249866306
+      Free_Smoke_Fx_Pixel_05_78: 1184355021
+      Free_Smoke_Fx_Pixel_05_79: 480278279
+      Free_Smoke_Fx_Pixel_05_8: 176944137
+      Free_Smoke_Fx_Pixel_05_80: 65791536
+      Free_Smoke_Fx_Pixel_05_81: 1875949519
+      Free_Smoke_Fx_Pixel_05_82: -1939242882
+      Free_Smoke_Fx_Pixel_05_83: 1310556977
+      Free_Smoke_Fx_Pixel_05_84: 189844975
+      Free_Smoke_Fx_Pixel_05_85: -1685820926
+      Free_Smoke_Fx_Pixel_05_86: 1200306373
+      Free_Smoke_Fx_Pixel_05_87: -642482855
+      Free_Smoke_Fx_Pixel_05_88: 520141589
+      Free_Smoke_Fx_Pixel_05_89: 169914876
+      Free_Smoke_Fx_Pixel_05_9: 1414786286
+      Free_Smoke_Fx_Pixel_05_90: -2079584610
+      Free_Smoke_Fx_Pixel_05_91: 1406213351
+      Free_Smoke_Fx_Pixel_05_92: -966620125
+      Free_Smoke_Fx_Pixel_05_93: -466068325
+      Free_Smoke_Fx_Pixel_05_94: -1138278398
+      Free_Smoke_Fx_Pixel_05_95: 1121519724
+      Free_Smoke_Fx_Pixel_05_96: -47996930
+      Free_Smoke_Fx_Pixel_05_97: -1226413043
+      Free_Smoke_Fx_Pixel_05_98: 1929662108
+      Free_Smoke_Fx_Pixel_05_99: -2024476279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

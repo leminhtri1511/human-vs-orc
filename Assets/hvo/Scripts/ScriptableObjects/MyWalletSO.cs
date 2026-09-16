@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using HVO.Scripts.Utils;
+using HVO.Scripts.Common;
 using UnityEngine;
 
 namespace HVO.Scripts.ScriptableObjects

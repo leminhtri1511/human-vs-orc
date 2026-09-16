@@ -1,16 +1,19 @@
 ﻿using System.Collections.Generic;
 using HVO.Scripts.ScriptableObjects;
-using HVO.Scripts.Utils;
+using HVO.Scripts.Common;
+using HVO.Scripts.ScriptableObjects.Events;
 
 namespace HVO.Scripts.Services
 {
     public class ResourceService
     {
         private readonly MyWalletSO _myWallet;
+        private readonly OnWalletUpdateEvent _onWalletUpdateEvent;
 
-        public ResourceService(MyWalletSO myWallet)
+        public ResourceService(MyWalletSO myWallet, OnWalletUpdateEvent onWalletUpdateEvent = null)
         {
             _myWallet = myWallet;
+            _onWalletUpdateEvent = onWalletUpdateEvent;
         }
 
         public bool HasEnoughAllResources(IReadOnlyList<ResourceInfo> requiredResources)
@@ -94,7 +97,7 @@ namespace HVO.Scripts.Services
 
                 resource.Amount = amount;
                 _myWallet.MyResources[i] = resource;
-
+                _onWalletUpdateEvent.RaiseEvent();
                 return;
             }
         }

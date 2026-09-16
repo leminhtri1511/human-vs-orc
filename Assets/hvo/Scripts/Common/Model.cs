@@ -1,7 +1,7 @@
 ﻿using System;
 using HVO.Scripts.ScriptableObjects;
 
-namespace HVO.Scripts.Utils
+namespace HVO.Scripts.Common
 {
     [Serializable]
     public struct ResourceInfo
@@ -28,9 +28,30 @@ namespace HVO.Scripts.Utils
         UnderTerrain = -1,
         Walkable = 0,
         Unreachable = 1,
-        Unit = 2,
+        Structure = 2,
+        Unit = 5,
         Pointer = 10,
-        PendingPlacement = 20,
+        Placement = 20,
         AlwaysOnTop = 100
+    }
+
+    public enum UnitState
+    {
+        Unknown = 0,
+        Idle = 1,
+        Moving = 2,
+        Attacking = 3,
+        Chopping = 4,
+        Mining = 5,
+        Building
+    }
+
+    public enum UnitTask
+    {
+        Unknown = 0,
+        Build = 1,
+        Chop = 2,
+        Mine = 3,
+        Attack = 4
     }
 }
