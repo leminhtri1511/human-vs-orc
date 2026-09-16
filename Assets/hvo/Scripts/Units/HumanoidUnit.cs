@@ -8,7 +8,7 @@ namespace HVO.Scripts.Units
         protected Vector2 Velocity;
         protected Vector3 LastPosition;
 
-        private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
+        private static readonly int SpeedHash = Animator.StringToHash("Speed");
 
         private void OnEnable()
         {
@@ -35,7 +35,7 @@ namespace HVO.Scripts.Units
             var state = Velocity.magnitude > 0 ? UnitState.Moving : UnitState.Idle;
 
             SetState(state);
-            UnitAnimator?.SetBool(IsMovingHash, state == UnitState.Moving);
+            UnitAnimator?.SetFloat(SpeedHash, Velocity.magnitude);
         }
     }
 }

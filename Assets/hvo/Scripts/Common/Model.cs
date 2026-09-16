@@ -42,7 +42,8 @@ namespace HVO.Scripts.Common
         Moving = 2,
         Attacking = 3,
         Chopping = 4,
-        Mining = 5
+        Mining = 5,
+        Building
     }
 
     public enum UnitTask

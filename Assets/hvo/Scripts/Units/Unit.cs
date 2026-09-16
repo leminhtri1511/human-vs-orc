@@ -31,6 +31,7 @@ namespace HVO.Scripts.Units
         public List<ActionSO> ActionSOList => _actionSOList;
         public bool HasActionSO => ActionSOList.Count > 0;
         public SpriteRenderer SpriteRenderer => _spriteRenderer;
+        public float ObjectDetectionRadius => _objectDetectionRadius;
         public bool HasTarget => Target != null;
         public bool IsTargeted => _isTargeted;
 

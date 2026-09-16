@@ -31,10 +31,10 @@ namespace HVO.Scripts.Utils
 
         public void Update()
         {
-            if (HasActiveWorker)
-            {
-                Debug.Log("UNDER CONSTRUCTION");
-            }
+            // if (HasActiveWorker)
+            // {
+                // Debug.Log("UNDER CONSTRUCTION");
+            // }
         }
 
         public void AddWorker(WorkerUnit worker)
@@ -42,7 +42,6 @@ namespace HVO.Scripts.Utils
             if (HasActiveWorker) return;
 
             _worker = worker;
-            Debug.Log("Add WorkerUnit");
         }
 
         public void RemoveWorker()
@@ -50,7 +49,6 @@ namespace HVO.Scripts.Utils
             if (!HasActiveWorker) return;
 
             _worker = null;
-            Debug.Log("Remove WorkerUnit");
         }
     }
 }
