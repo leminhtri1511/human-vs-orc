@@ -19,5 +19,15 @@ namespace HVO.Scripts.Units
         {
             _buildingProcess = process;
         }
+
+        public void AssignWorker(WorkerUnit worker)
+        {
+            _buildingProcess?.AddWorker(worker);
+        }
+
+        public void UnassignWorker()
+        {
+            _buildingProcess?.RemoveWorker();
+        }
     }
 }

@@ -1,4 +1,3 @@
-using HVO.Scripts.Common;
 using HVO.Scripts.ScriptableObjects;
 using HVO.Scripts.ScriptableObjects.Events;
 using HVO.Scripts.Services;
@@ -130,7 +129,19 @@ namespace HVO.Scripts.Managers
                 return;
             }
 
+            if (WorkerClickedOnUnderConstruction(unit))
+            {
+                ((WorkerUnit)ActiveUnit).SendToBuild(unit as StructureUnit);
+                return;
+            }
+
             SelectUnit(unit);
+        }
+
+        private bool WorkerClickedOnUnderConstruction(Unit clickedUnit)
+        {
+            return ActiveUnit is WorkerUnit &&
+                   clickedUnit is StructureUnit { IsUnderConstruction: true };
         }
 
         private void DeselectUnit()

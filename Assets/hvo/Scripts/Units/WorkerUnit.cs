@@ -1,5 +1,4 @@
 ﻿using HVO.Scripts.Common;
-using UnityEngine;
 
 namespace HVO.Scripts.Units
 {
@@ -15,6 +14,13 @@ namespace HVO.Scripts.Units
         protected override void OnSetDestination()
         {
             ResetState();
+        }
+
+        public void SendToBuild(StructureUnit structureUnit)
+        {
+            MoveTo(structureUnit.transform.position);
+            SetTarget(structureUnit);
+            SetTask(UnitTask.Build);
         }
 
         private void CheckForCloseObjects()
@@ -35,7 +41,7 @@ namespace HVO.Scripts.Units
 
         private void StartBuilding(StructureUnit structureUnit)
         {
-            Debug.Log("Start build" + structureUnit.gameObject.name);
+            structureUnit.AssignWorker(this);
         }
 
         private void ResetState()
@@ -50,6 +56,11 @@ namespace HVO.Scripts.Units
 
         private void CleanupTarget()
         {
+            if (Target is StructureUnit structureUnit)
+            {
+                structureUnit.UnassignWorker();
+            }
+
             SetTarget(null);
         }
     }
