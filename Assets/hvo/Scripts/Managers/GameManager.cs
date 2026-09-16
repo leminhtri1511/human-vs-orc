@@ -173,6 +173,7 @@ namespace HVO.Scripts.Managers
         {
             if (!HasActiveUnit() || !IsHumanoidUnit(ActiveUnit)) return;
 
+            //NOTE: (PT.12 - 76) display different effect on clicked
             _uiViewHandle.DisplayClickEffect(inputPosition);
             ActiveUnit.MoveTo(inputPosition);
         }
