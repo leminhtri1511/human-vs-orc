@@ -7,48 +7,66 @@ namespace HVO.Scripts.Utils
 {
     public class BuildingProcess
     {
-        private WorkerUnit _worker;
+        private BuildActionSO _buildActionSO;
+        private WorkerUnit _workerUnit;
+        private StructureUnit _structureUnit;
+        private float _processTimer;
+        private bool _isBuildingFinished;
+        public bool IsUnderConstruction => HasActiveWorker && _workerUnit.CurrentState == UnitState.Building;
 
-        public bool HasActiveWorker => _worker != null;
+        public bool HasActiveWorker => _workerUnit != null;
 
         public BuildingProcess(BuildActionSO buildActionSO, Vector3 placementPosition, WorkerUnit worker)
         {
+            _buildActionSO = buildActionSO;
+
             ProcessHandling(buildActionSO, placementPosition, worker);
         }
 
         private void ProcessHandling(BuildActionSO buildActionSO, Vector3 placementPosition, WorkerUnit worker)
         {
-            var structure = Object.Instantiate(buildActionSO.StructurePrefab);
+            _structureUnit = Object.Instantiate(buildActionSO.StructurePrefab);
+            _structureUnit.SpriteRenderer.sprite = buildActionSO.FoundationSprite;
+            _structureUnit.transform.position = placementPosition;
+            _structureUnit.RegisterProcess(this);
 
-            structure.SpriteRenderer.sprite = buildActionSO.FoundationSprite;
-            structure.transform.position = placementPosition;
-            structure.RegisterProcess(this);
-
-            worker.MoveTo(placementPosition);
-            worker.SetTask(UnitTask.Build);
-            worker.SetTarget(structure);
+            worker.SendToBuild(_structureUnit);
         }
 
         public void Update()
         {
-            // if (HasActiveWorker)
-            // {
-                // Debug.Log("UNDER CONSTRUCTION");
-            // }
+            if (_isBuildingFinished) return;
+
+            if (!IsUnderConstruction) return;
+
+            _processTimer += Time.deltaTime;
+
+            if ((_processTimer >= _buildActionSO.ConstructionTime))
+            {
+                HandleBuildingFinished();
+            }
+        }
+
+        private void HandleBuildingFinished()
+        {
+            _isBuildingFinished = true;
+            _structureUnit.SpriteRenderer.sprite = _buildActionSO.CompletionSprite;
+            _workerUnit.OnBuildingFinished();
+            _structureUnit.OnConstructionFinished();
         }
 
         public void AddWorker(WorkerUnit worker)
         {
             if (HasActiveWorker) return;
 
-            _worker = worker;
+            _workerUnit = worker;
         }
 
         public void RemoveWorker()
         {
             if (!HasActiveWorker) return;
 
-            _worker = null;
+            _workerUnit = null;
         }
     }
 }

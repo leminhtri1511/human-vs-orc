@@ -17,9 +17,10 @@ namespace HVO.Scripts.ScriptableObjects
         [SerializeField] private Sprite _completionSprite;
         [SerializeField] private Sprite _overlayPlacementSprite;
 
-        [Header("Vectors")]
+        [Header("Building Configs")]
         [SerializeField] private Vector3Int _buildingSize;
         [SerializeField] private Vector3Int _originOffset;
+        [SerializeField] private float _constructionTime;
 
         [Header("Required Resources")]
         [SerializeField] private List<ResourceInfo> _requiredResources;
@@ -28,12 +29,10 @@ namespace HVO.Scripts.ScriptableObjects
         public Sprite FoundationSprite => _foundationSprite;
         public Sprite CompletionSprite => _completionSprite;
         public Sprite OverlayPlacementSprite => _overlayPlacementSprite;
-
         public Vector3Int BuildingSize => _buildingSize;
         public Vector3Int OriginOffset => _originOffset;
-
         public List<ResourceInfo> RequiredResources => _requiredResources;
-
         public StructureUnit StructurePrefab => _structurePrefab;
+        public float ConstructionTime => _constructionTime;
     }
 }

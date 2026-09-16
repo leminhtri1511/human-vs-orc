@@ -14,6 +14,8 @@ namespace HVO.Scripts.Units
                 _buildingProcess.Update();
             }
         }
+        
+        public void OnConstructionFinished() => _buildingProcess = null;
 
         public void RegisterProcess(BuildingProcess process)
         {

@@ -20,6 +20,11 @@ namespace HVO.Scripts.Units
             ResetState();
         }
 
+        public void OnBuildingFinished()
+        {
+            ResetState();
+        }
+
         public void SendToBuild(StructureUnit structureUnit)
         {
             MoveTo(structureUnit.transform.position);
