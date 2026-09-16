@@ -65,7 +65,7 @@ namespace HVO.Scripts.Units
         {
             var distanceToConstruction = Vector3.Distance(transform.position, Target.transform.position);
 
-            if (distanceToConstruction <= ObjectDetectionRadius)
+            if (distanceToConstruction <= ObjectDetectionRadius && CurrentState == UnitState.Idle)
             {
                 StartBuilding(Target as StructureUnit);
             }

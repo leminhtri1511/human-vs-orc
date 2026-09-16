@@ -5956,6 +5956,7 @@ MonoBehaviour:
   _unreachableTilemaps:
   - {fileID: 1060614720}
   _uiViewHandle: {fileID: 12520741}
+  _constructionEffect: {fileID: 4462185666251293041, guid: b04c81a062fa59640a13e8c08e516be7, type: 3}
   ActiveUnit: {fileID: 0}
 --- !u!1 &1908394172
 GameObject:

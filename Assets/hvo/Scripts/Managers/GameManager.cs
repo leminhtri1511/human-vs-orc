@@ -26,6 +26,9 @@ namespace HVO.Scripts.Managers
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
+        [Header("VFX")]
+        [SerializeField] private ParticleSystem _constructionEffect;
+
         public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
@@ -178,8 +181,10 @@ namespace HVO.Scripts.Managers
         {
             if (!CanStartBuild(out var placementPosition)) return;
 
-            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition, ActiveUnit as WorkerUnit);
-
+            _buildingProcess = new BuildingProcess(_currentBuildActionSO,
+                placementPosition,
+                ActiveUnit as WorkerUnit,
+                _constructionEffect);
 
             ExecuteCallback();
         }
