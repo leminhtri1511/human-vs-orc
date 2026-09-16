@@ -27,10 +27,12 @@ namespace HVO.Scripts.Units
 
         public UnitState CurrentState { get; protected set; } = UnitState.Idle;
         public UnitTask CurrentTask { get; protected set; } = UnitTask.Unknown;
-        public bool IsTargeted => _isTargeted;
+        public Unit Target { get; protected set; }
         public List<ActionSO> ActionSOList => _actionSOList;
         public bool HasActionSO => ActionSOList.Count > 0;
         public SpriteRenderer SpriteRenderer => _spriteRenderer;
+        public bool HasTarget => Target != null;
+        public bool IsTargeted => _isTargeted;
 
         public bool IsMoving
         {
@@ -62,18 +64,28 @@ namespace HVO.Scripts.Units
             OnSetState(CurrentState, state);
         }
 
+        public void SetTarget(Unit target)
+        {
+            Target = target;
+        }
+
         public void MoveTo(Vector3 destination)
         {
             var direction = (destination - transform.position).normalized;
             _spriteRenderer.flipX = direction.x < 0;
 
             _aiPawn?.SetDestination(destination);
+            OnSetDestination();
         }
 
         public void ToggleUnitSelectedState(bool isSelected)
         {
             _spriteRenderer.material = isSelected ? _highlightMaterial : _originalMaterial;
             _isTargeted = isSelected;
+        }
+
+        protected virtual void OnSetDestination()
+        {
         }
 
         protected virtual void OnSetTask(UnitTask oldTask, UnitTask newTask)

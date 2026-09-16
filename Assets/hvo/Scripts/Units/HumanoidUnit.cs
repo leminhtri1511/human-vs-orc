@@ -35,7 +35,7 @@ namespace HVO.Scripts.Units
             var state = Velocity.magnitude > 0 ? UnitState.Moving : UnitState.Idle;
 
             SetState(state);
-            UnitAnimator.SetBool(IsMovingHash, state == UnitState.Moving);
+            UnitAnimator?.SetBool(IsMovingHash, state == UnitState.Moving);
         }
     }
 }

@@ -42,6 +42,9 @@ namespace HVO.Scripts.Managers
         private void Update()
         {
             HandleTouchInput();
+
+            if (ActiveUnit is null) return;
+            Debug.Log($"State: {ActiveUnit.CurrentState} | Task: {ActiveUnit.CurrentTask}");
         }
 
         private void OnEnable()
@@ -164,9 +167,8 @@ namespace HVO.Scripts.Managers
         {
             if (!CanStartBuild(out var placementPosition)) return;
 
-            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition);
-            ActiveUnit.MoveTo(placementPosition);
-            ActiveUnit.SetTask(UnitTask.Build);
+            _buildingProcess = new BuildingProcess(_currentBuildActionSO, placementPosition, ActiveUnit as WorkerUnit);
+
 
             ExecuteCallback();
         }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using HVO.Scripts.Common;
+using UnityEngine;
 
 namespace HVO.Scripts.Units
 {
@@ -6,7 +7,14 @@ namespace HVO.Scripts.Units
     {
         protected override void UpdateBehaviour()
         {
+            if (CurrentTask == UnitTask.Unknown) return;
+
             CheckForCloseObjects();
+        }
+
+        protected override void OnSetDestination()
+        {
+            ResetState();
         }
 
         private void CheckForCloseObjects()
@@ -16,9 +24,33 @@ namespace HVO.Scripts.Units
             foreach (var hit in hits)
             {
                 if (hit.gameObject == gameObject) continue;
+                if (CurrentTask != UnitTask.Build || hit.gameObject != Target.gameObject) continue;
 
-                Debug.Log(hit.gameObject.name);
+                if (hit.TryGetComponent<StructureUnit>(out var structureUnit))
+                {
+                    StartBuilding(structureUnit);
+                }
             }
+        }
+
+        private void StartBuilding(StructureUnit structureUnit)
+        {
+            Debug.Log("Start build" + structureUnit.gameObject.name);
+        }
+
+        private void ResetState()
+        {
+            SetTask(UnitTask.Unknown);
+
+            if (HasTarget)
+            {
+                CleanupTarget();
+            }
+        }
+
+        private void CleanupTarget()
+        {
+            SetTarget(null);
         }
     }
 }
