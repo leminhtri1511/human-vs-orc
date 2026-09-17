@@ -12,17 +12,19 @@ namespace HVO.Scripts.Managers
         [SerializeField] private Tilemap[] _unreachableTilemaps;
 
         private PathFinding _pathFinding;
+        public Tilemap PathFindingTilemap => _walkableTilemap;
 
         private void Start()
         {
-            var bounds = _walkableTilemap.cellBounds;
-            var width = bounds.size.x;
-            var height = bounds.size.y;
+            _pathFinding = new PathFinding(this);
+        }
 
-            _pathFinding = new PathFinding(
-                width,
-                height
-            );
+        public bool TestCanWalkAtTile(Vector3Int tilePosition)
+        {
+            return
+                _walkableTilemap.HasTile(tilePosition) &&
+                !IsInUnreachableTilemap(tilePosition)
+                ;
         }
 
         public bool CanPlaceTile(Vector3Int tilePosition)
