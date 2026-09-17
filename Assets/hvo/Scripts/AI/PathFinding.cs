@@ -8,6 +8,7 @@ namespace HVO.Scripts.AI
         private readonly TilemapManager _tilemapManager;
         private int _with;
         private int _height;
+        private Vector3Int _gridOffset;
 
         public Node[,] Grid { get; private set; }
 
@@ -21,6 +22,8 @@ namespace HVO.Scripts.AI
         private void GetCellBounds()
         {
             _tilemapManager.PathFindingTilemap.CompressBounds();
+            _gridOffset = _tilemapManager.PathFindingTilemap.cellBounds.min;
+
             var bounds = _tilemapManager.PathFindingTilemap.cellBounds;
 
             _with = bounds.size.x;
@@ -31,27 +34,19 @@ namespace HVO.Scripts.AI
 
         private void InitializeGrid()
         {
-            var offset = _tilemapManager.PathFindingTilemap.cellBounds;
-            var halfCellSize = _tilemapManager.PathFindingTilemap.cellSize / 2;
-
-
             Grid = new Node[_with, _height];
+
+            var cellSize = _tilemapManager.PathFindingTilemap.cellSize;
 
             for (int x = 0; x < _with; x++)
             {
                 for (int y = 0; y < _height; y++)
                 {
-                    var nodeLeftBottomPosition = new Vector3Int(x + offset.x, y + offset.y);
-                    var nodeCenterPositon = nodeLeftBottomPosition + halfCellSize;
+                    var nodeLeftBottomPosition = new Vector3Int(x + _gridOffset.x, y + _gridOffset.y);
                     var isWalkable = _tilemapManager.TestCanWalkAtTile(nodeLeftBottomPosition);
-                    var node = new Node(nodeCenterPositon.x, nodeCenterPositon.y, isWalkable);
+                    var node = new Node(nodeLeftBottomPosition, cellSize, isWalkable);
 
                     Grid[x, y] = node;
-
-                    if (!isWalkable)
-                    {
-                        Debug.Log($"NODE x: {x}, y: {y} | POS: Vt2({node.x}, {node.y}) | IsWalkable: {isWalkable}");
-                    }
                 }
             }
         }
