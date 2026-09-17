@@ -1,4 +1,5 @@
 ﻿using HVO.Scripts.Common;
+using HVO.Scripts.Managers;
 using HVO.Scripts.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -10,19 +11,13 @@ namespace HVO.Scripts.Utils
         private GameObject _pendingPlacement;
         private readonly BuildActionSO _buildActionSO;
         private Vector3Int[] _highlightPositions;
-        private readonly Tilemap _walkableTilemap;
-        private readonly Tilemap _overlayTilemap;
-        private readonly Tilemap[] _unreachableTilemaps;
+        private TilemapManager _tilemapManager;
 
         public PlacementProcess(BuildActionSO buildActionSO,
-            Tilemap walkableTilemap,
-            Tilemap overlayTilemap,
-            Tilemap[] unreachableTilemaps)
+            TilemapManager tilemapManager)
         {
             _buildActionSO = buildActionSO;
-            _walkableTilemap = walkableTilemap;
-            _overlayTilemap = overlayTilemap;
-            _unreachableTilemaps = unreachableTilemaps;
+            _tilemapManager = tilemapManager;
         }
 
         public void Update()
@@ -81,8 +76,10 @@ namespace HVO.Scripts.Utils
                 var tile = ScriptableObject.CreateInstance<Tile>();
 
                 tile.sprite = _buildActionSO.OverlayPlacementSprite;
-                tile.color = CanPlaceTile(tilePosition) ? _buildActionSO.ValidColor : _buildActionSO.InvalidColor;
-                _overlayTilemap.SetTile(tilePosition, tile);
+                tile.color = _tilemapManager.CanPlaceTile(tilePosition)
+                    ? _buildActionSO.ValidColor
+                    : _buildActionSO.InvalidColor;
+                _tilemapManager.SetTileOverlay(tilePosition, tile);
             }
         }
 
@@ -92,39 +89,8 @@ namespace HVO.Scripts.Utils
 
             foreach (var tilePosition in _highlightPositions)
             {
-                _overlayTilemap.SetTile(tilePosition, null);
+                _tilemapManager.SetTileOverlay(tilePosition, null);
             }
-        }
-
-        public bool CanPlaceTile(Vector3Int tilePosition)
-        {
-            return _walkableTilemap.HasTile(tilePosition) &&
-                   !IsUnreachableTilemap(tilePosition) &&
-                   !IsBlockedByGameObject(tilePosition);
-        }
-
-        private bool IsUnreachableTilemap(Vector3Int tilePosition)
-        {
-            foreach (var tileMap in _unreachableTilemaps)
-            {
-                if (tileMap.HasTile(tilePosition)) return true;
-            }
-
-            return false;
-        }
-
-        private bool IsBlockedByGameObject(Vector3Int tilePosition)
-        {
-            var tileSize = _walkableTilemap.cellSize;
-            var colliders = Physics2D.OverlapBoxAll(tilePosition + tileSize / 2, tileSize * 0.9f, 0);
-
-            foreach (var collider in colliders)
-            {
-                var layer = collider.gameObject.layer;
-                if (layer == LayerMask.NameToLayer("Player")) return true;
-            }
-
-            return false;
         }
 
         public bool TryFinalizePlacement(out Vector3 placementPosition)
@@ -145,7 +111,7 @@ namespace HVO.Scripts.Utils
         {
             foreach (var tilePosition in _highlightPositions)
             {
-                if (!CanPlaceTile(tilePosition)) return false;
+                if (!_tilemapManager.CanPlaceTile(tilePosition)) return false;
             }
 
             return true;

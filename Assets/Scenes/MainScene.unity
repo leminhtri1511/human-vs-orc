@@ -2973,6 +2973,54 @@ MonoBehaviour:
   _orderLayer: -2
   _defaultRenderer: {fileID: 0}
   _tilemapRenderer: {fileID: 737715229}
+--- !u!1 &907078319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 907078320}
+  - component: {fileID: 907078321}
+  m_Layer: 0
+  m_Name: TilemapManager
+  m_TagString: TilemapManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &907078320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907078319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1558353785}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &907078321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907078319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc192844b7549bd9c5e7056ac2338db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkableTilemap: {fileID: 299733204}
+  _overlayTilemap: {fileID: 570163896}
+  _unreachableTilemaps:
+  - {fileID: 1060614720}
 --- !u!1 &964100805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,6 +4856,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1726531562}
+  - {fileID: 907078320}
   - {fileID: 12520740}
   - {fileID: 2096005303}
   m_Father: {fileID: 0}
@@ -5916,7 +5965,7 @@ GameObject:
   - component: {fileID: 1726531563}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5948,16 +5997,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ce33c7355506a47a386fa081744394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActiveUnit: {fileID: 0}
   _onUnitActionEvent: {fileID: 11400000, guid: 25448082ee784984eacca00bff3bba8b, type: 2}
   _onWalletUpdateEvent: {fileID: 11400000, guid: 0433dcc6345c0b94c8b066b91a016dca, type: 2}
   _myWalletSO: {fileID: 11400000, guid: b96a4b0eb5a1e4d4d9753c428d9cdb30, type: 2}
-  _walkableTilemap: {fileID: 299733204}
-  _overlayTilemap: {fileID: 570163896}
-  _unreachableTilemaps:
-  - {fileID: 1060614720}
   _uiViewHandle: {fileID: 12520741}
   _constructionEffect: {fileID: 4462185666251293041, guid: b04c81a062fa59640a13e8c08e516be7, type: 3}
-  ActiveUnit: {fileID: 0}
 --- !u!1 &1908394172
 GameObject:
   m_ObjectHideFlags: 0
