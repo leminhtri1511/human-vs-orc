@@ -5,12 +5,13 @@ using HVO.Scripts.UI;
 using HVO.Scripts.Units;
 using HVO.Scripts.Utils;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 namespace HVO.Scripts.Managers
 {
     public class GameManager : SingletonManager<GameManager>
     {
+        public Unit ActiveUnit;
+
         [Header("Events")]
         [SerializeField] private OnUnitActionEvent _onUnitActionEvent;
         [SerializeField] private OnWalletUpdateEvent _onWalletUpdateEvent;
@@ -18,18 +19,12 @@ namespace HVO.Scripts.Managers
         [Header("Data")]
         [SerializeField] private MyWalletSO _myWalletSO;
 
-        [Header("Tilemaps")]
-        [SerializeField] private Tilemap _walkableTilemap;
-        [SerializeField] private Tilemap _overlayTilemap;
-        [SerializeField] private Tilemap[] _unreachableTilemaps;
-
         [Header("Controllers")]
         [SerializeField] private UIViewHandle _uiViewHandle;
 
         [Header("VFX")]
         [SerializeField] private ParticleSystem _constructionEffect;
 
-        public Unit ActiveUnit;
         private Vector2 _initialTouchPosition;
         private PlacementProcess _placementProcess;
         private BuildingProcess _buildingProcess;
@@ -74,11 +69,11 @@ namespace HVO.Scripts.Managers
         private void StartPendingPlacement(BuildActionSO buildActionSO)
         {
             if (_placementProcess != null) return;
+            var tilemapManager = TilemapManager.Get();
 
             _currentBuildActionSO = buildActionSO;
 
-            _placementProcess =
-                new PlacementProcess(buildActionSO, _walkableTilemap, _overlayTilemap, _unreachableTilemaps);
+            _placementProcess = new PlacementProcess(buildActionSO, tilemapManager);
             _placementProcess.ShowPendingPlacement();
 
             _uiViewHandle.InitializeRequiredResource(buildActionSO);
