@@ -50,5 +50,30 @@ namespace HVO.Scripts.AI
                 }
             }
         }
+
+        public void FindPath(Vector3 startPosition, Vector3 endPosition)
+        {
+            Node startNode = FindNode(startPosition);
+            Node endNode = FindNode(endPosition);
+
+            Debug.Log("Start Node: " + startNode);
+            Debug.Log("End Node: " + endNode);
+        }
+
+        private Node FindNode(Vector3 position)
+        {
+            Vector3Int flooredPosition = new Vector3Int(Mathf.FloorToInt(position.x), Mathf.FloorToInt(position.y));
+
+            int gridX = flooredPosition.x - _gridOffset.x;
+            int gridY = flooredPosition.y - _gridOffset.y;
+
+            if (gridX >= 0 && gridX < _with && gridY >= 0 && gridY < _height)
+            {
+                return Grid[gridX, gridY];
+            }
+
+            Debug.Log($"Node not found at position: {position}");
+            return null;
+        }
     }
 }

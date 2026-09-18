@@ -22,5 +22,10 @@ namespace HVO.Scripts.AI
             CenterY = nodeCenterPosition.y;
             IsWalkable = isWalkable;
         }
+
+        public override string ToString()
+        {
+            return $"({X}, {Y})";
+        }
     }
 }

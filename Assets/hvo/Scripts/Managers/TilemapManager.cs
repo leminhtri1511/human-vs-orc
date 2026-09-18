@@ -14,9 +14,18 @@ namespace HVO.Scripts.Managers
         private PathFinding _pathFinding;
         public Tilemap PathFindingTilemap => _walkableTilemap;
 
+        [Header("Testing")]
+        [SerializeField] private Transform m_StartTransform;
+        [SerializeField] private Transform m_DestinationTransform;
+
         private void Start()
         {
             _pathFinding = new PathFinding(this);
+            
+            _pathFinding.FindPath(
+                m_StartTransform.position,
+                m_DestinationTransform.position
+            );
         }
 
         public bool TestCanWalkAtTile(Vector3Int tilePosition)
